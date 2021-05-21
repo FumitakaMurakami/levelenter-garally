@@ -1,13 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header id="head">
+      <Tab />
+      <a href="#"><img id="logo" src="./components/img/logo.png" alt=""/></a>
+    </header>
+    <h1 class="mgr-10"></h1>
+    <router-view />
   </div>
 </template>
-
+<script>
+import { Component, Vue } from "vue-property-decorator";
+import Tab from "./components/Tab";
+@Component({
+  components: {
+    Tab,
+  },
+})
+export default class App extends Vue {}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,10 +27,32 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+#logo {
+  height: 300px;
+  width: 1000;
 }
 
+#head {
+  padding: 30px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.mgr-10 {
+  margin-right: 10px;
+  background-color: #e73c7e;
+}
 #nav a {
   font-weight: bold;
   color: #2c3e50;
