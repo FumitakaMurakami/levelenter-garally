@@ -28,7 +28,7 @@ import { ImagePath } from "../views/ImagePath";
 export default class Garally extends Vue {
   private inputMessage = "";
   private filterKeyword = "";
-  private url = "./resouce/VRsample.png";
+
   @Prop({ default: [] })
   images!: ImagePath[];
 
@@ -49,11 +49,6 @@ export default class Garally extends Vue {
   }
 
   private itemdelete(item: ImagePath) {
-    console.log(item.name);
-    // this.images.splice(
-    //   this.images.findIndex((p) => p === item),
-    //   1
-    // );
     this.$emit("deleteItem", item.name);
   }
   private linkpage(dest_url: string) {
@@ -61,10 +56,10 @@ export default class Garally extends Vue {
     console.log(dest_url);
     window.location.href = dest_url;
   }
-  mounted() {
+  /* mounted() {
     const targetElement = this.$refs.vrprogram;
     console.log("対象のDOM：", targetElement);
-  }
+  } */
   /* private image_src(number: number) {
     console.log(this.images[number].path);
     const path = this.images[number].path;
