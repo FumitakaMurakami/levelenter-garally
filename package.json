@@ -8,10 +8,18 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "sv:compile": "./node_modules/.bin/tsc --p server_ts ",
+    "sv:start": "pm2 start config/pm2.config.json --env production",
+    "prod": "run-s prod:web sv:compile prod:sv ",
+    "prod:sv": "run-s sv:compile sv:start",
+    "prod:web": "./node_modules/.bin/webpack --env production",
+    "prod:del": "sudo pm2 delete all  ",
+    "prod:sig": "./node_modules/.bin/ts-node ./server_ts/signaling.ts"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "pm2": "^4.5.6",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
@@ -33,6 +41,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "gh-pages": "^3.1.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
   },

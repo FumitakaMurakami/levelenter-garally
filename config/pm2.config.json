@@ -1,0 +1,15 @@
+{
+  "name": "gallery",
+  "script": "server_build/server.js",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "env_production": {
+    "NODE_ENV": "production",
+    "name": "gallery"
+  },
+  "env_beta": {
+    "NODE_ENV": "betaversion",
+    "name": "gallery_beta"
+  }
+}
