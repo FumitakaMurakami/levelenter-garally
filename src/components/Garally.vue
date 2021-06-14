@@ -2,6 +2,7 @@
   <div>
     <button @click="filterA" id="c-button">3Dモデル</button>
     <button @click="filterB" id="c-button">VRプログラム</button>
+    <button @click="filterC" id="c-button">ARプログラム</button>
     <button @click="clearFilter" id="c-button">全表示</button>
 
     <div v-for="item of imagesModel" :key="item.name">
@@ -28,24 +29,35 @@ import { ImagePath } from "../views/ImagePath";
 export default class Garally extends Vue {
   private inputMessage = "";
   private filterKeyword = "";
+  private filterKeyword2 = "";
 
   @Prop({ default: [] })
   images!: ImagePath[];
 
   get imagesModel() {
     return this.images.filter(
-      (item) => this.filterKeyword == "" || item.class !== this.filterKeyword
+      (item) =>
+        this.filterKeyword == "" ||
+        (item.class !== this.filterKeyword &&
+          item.class !== this.filterKeyword2)
     );
   }
 
   private filterB() {
     this.filterKeyword = "3dmodel";
+    this.filterKeyword2 = "arprogram";
   }
   private filterA() {
     this.filterKeyword = "vrprogram";
+    this.filterKeyword2 = "arprogram";
+  }
+  private filterC() {
+    this.filterKeyword = "3dmodel";
+    this.filterKeyword2 = "vrprogram";
   }
   private clearFilter() {
     this.filterKeyword = "";
+    this.filterKeyword2 = "";
   }
 
   private itemdelete(item: ImagePath) {
