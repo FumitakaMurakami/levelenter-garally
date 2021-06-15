@@ -1,23 +1,23 @@
 [
   {
     "number": 0,
-    "name": "a",
+    "name": "VR音声認識プログラム",
     "path": "./resouce/VRsample.png",
     "class": "vrprogram",
     "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/"
   },
   {
     "number": 1,
-    "name": "b",
-    "path": "./resouce/sample.jpg",
-    "class": "vrprogram",
-    "url": "https://www.youtube.com/"
+    "name": "VRオフィス",
+    "path": "./resouce/3dmodel-1.png",
+    "class": "3dmodel",
+    "url": "https://fumitakamurakami.github.io/vroffice/"
   },
   {
     "number": 2,
-    "name": "c",
+    "name": "1000札両替AR",
     "path": "./resouce/sample.jpg",
-    "class": "vrprogram",
+    "class": "arprogram",
     "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/"
   },
   {
