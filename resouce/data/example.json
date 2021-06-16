@@ -4,34 +4,44 @@
     "name": "VR音声認識プログラム",
     "path": "./resouce/VRsample.png",
     "class": "vrprogram",
-    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/"
+    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/",
+    "day": "2021/06/16",
+    "producer": "Fumitaka Murakami"
   },
   {
     "number": 1,
     "name": "VRオフィス",
     "path": "./resouce/3dmodel-1.png",
     "class": "3dmodel",
-    "url": "https://fumitakamurakami.github.io/vroffice/"
+    "url": "https://fumitakamurakami.github.io/vroffice/",
+    "day": "2021/06/16",
+    "producer": "Sayaka Nakagawa"
   },
   {
     "number": 2,
     "name": "1000札両替AR",
     "path": "./resouce/sample.jpg",
     "class": "arprogram",
-    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/"
+    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/",
+    "day": "2021/06/16",
+    "producer": "Fumitaka Murakami"
   },
   {
     "number": 3,
     "name": "d",
     "path": "./resouce/sample.jpg",
     "class": "3dmodel",
-    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/"
+    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/",
+    "day": "2021/06/16",
+    "producer": "Fumitaka Murakami"
   },
   {
     "number": 4,
     "name": "e",
     "path": "./resouce/sample.jpg",
     "class": "3dmodel",
-    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/"
+    "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/",
+    "day": "2021/06/16",
+    "producer": "Fumitaka Murakami"
   }
 ]
