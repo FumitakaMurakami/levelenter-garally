@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <header id="head">
-      <Tab />
-      <!-- <a href="#"><img id="logo" src="./components/img/logo.png" alt=""/></a> -->
-    </header>
-    <h1 class="mgr-10"></h1>
     <router-view />
   </div>
 </template>

@@ -8,6 +8,7 @@
       <b-button v-b-toggle.sidebar-right style="float: right"
         ><font-awesome-icon icon="filter" />
       </b-button>
+
       <b-sidebar id="sidebar-right" title="フィルター" right shadow>
         <div class="px-3 py-2">
           <ul>
@@ -35,30 +36,34 @@
         </div>
       </b-sidebar>
     </div>
-    <div v-for="item of imagesModel" :key="item.name">
-      <ul style="text-align:center;" id="Gallery">
-        <li id="photo" ref="vrprogram">
-          <a href="#">
-            <img
-              :src="item.path"
-              :class="item.class"
-              @click="linkpage(item.url)"
-            />
-          </a>
-          {{ item.name }}
-          <p id="itemdata">
-            投稿日：{{ item.day }} 制作者：{{ item.producer }}
-          </p>
-        </li>
-      </ul>
+
+    <div class="row">
+      <div
+        v-for="item of imagesModel"
+        :key="item.name"
+        class="col-xl-3 col-lg-4 col-md-6 col-sm-12"
+      >
+        <div class="card py-3 my-3" style="objectfit: cover">
+          <img
+            class="bd-placeholder-img card-img-top"
+            :src="item.path"
+            :class="item.class"
+            @click="linkpage(item.url)"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text" id="itemdata">
+              投稿日：{{ item.day }} 制作者：{{ item.producer }}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
-import { filter } from "vue/types/umd";
 import { ImagePath } from "../views/ImagePath";
-import Config from "../../config.d";
 
 @Component({ components: {} })
 export default class Garally extends Vue {
@@ -135,7 +140,11 @@ export default class Garally extends Vue {
 }
 </script>
 <style scoped>
-ul,
+img {
+  height: 240px;
+  object-fit: contain;
+}
+/*ul,
 li,
 dl,
 dt,
@@ -173,7 +182,7 @@ li {
   z-index: 100;
 }
 
-/* .demo {
+ .demo {
   font-family: sans-serif;
   border: 1px solid #eee;
   border-radius: 2px;
@@ -182,7 +191,7 @@ li {
   margin-bottom: 40px;
   user-select: none;
   overflow-x: auto;
-} */
+} 
 #c-button {
   -webkit-writing-mode: horizontal-tb !important;
   -webkit-appearance: button;
@@ -202,4 +211,5 @@ li {
 #itemdata {
   font-size: 10px;
 }
+*/
 </style>

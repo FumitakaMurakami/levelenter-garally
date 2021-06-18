@@ -1,18 +1,19 @@
-<template>
+a<template>
   <div>
     <header>
       <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
-      <h1 class="head-cl">
-        <a href="https://blockvrock.com/">
-          BLOCKVROCK
-        </a>
-        <p>
-          VR ARギャラリー
-        </p>
-      </h1>
-      <p class="company">
-        <img id="logo" src="./img/LEicon.png" alt="" />
-      </p>
+      <div class="py-5 px-5 d-flex align-items-center">
+        <h1><a href="https://blockvrock.com/"> BLOCKVROCK </a></h1>
+        <p class="h-100 mx-5 pt-2">VR ARギャラリー</p>
+      </div>
+      <!-- <p class="company">
+        <img
+          id="logo"
+          class="rounded-circle r-10rem"
+          src="./img/LEicon.png"
+          alt=""
+        />
+      </p> -->
     </header>
   </div>
   <!-- <div class="cp_navi">
@@ -26,10 +27,10 @@
 </template>
 
 <style scoped>
-.head-cl {
+/* .head-cl {
   padding: 30px 0 10px 10px;
   display: inline-block;
-}
+} */
 a {
   color: #3a302d;
   text-decoration: none;
@@ -38,7 +39,7 @@ a {
     "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック",
     "MS PGothic", sans-serif; */
 }
-p {
+/*p {
   margin: 3px 0 0 20px !important;
   font-size: 15px;
   display: inline-block;
@@ -60,7 +61,7 @@ p {
   float: right;
   height: 6em;
   width: 10em;
-}
+} */
 /* img {
   width: 140px;
   height: 50px;
