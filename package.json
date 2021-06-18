@@ -18,9 +18,17 @@
     "prod:sig": "./node_modules/.bin/ts-node ./server_ts/signaling.ts"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "bootstrap": "^5.0.1",
+    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "pm2": "^4.5.6",
-    "vue": "^2.6.13",
+    "vue": "^2.6.14",
+    "vue-burger-menu": "^2.0.5",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.2.0"

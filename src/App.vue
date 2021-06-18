@@ -2,7 +2,7 @@
   <div id="app">
     <header id="head">
       <Tab />
-      <a href="#"><img id="logo" src="./components/img/logo.png" alt=""/></a>
+      <!-- <a href="#"><img id="logo" src="./components/img/logo.png" alt=""/></a> -->
     </header>
     <h1 class="mgr-10"></h1>
     <router-view />
@@ -19,7 +19,11 @@ import Tab from "./components/Tab";
 export default class App extends Vue {}
 </script>
 <style>
-#app {
+@import "./components/css/style.css";
+/* div {
+  background-color: #fafafa;
+} */
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,5 +64,5 @@ export default class App extends Vue {}
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>

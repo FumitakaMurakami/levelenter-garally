@@ -1,6 +1,12 @@
 <template>
   <div class="home">
-    <Garally :images="imageList" @deleteItem="deleteItem" />
+    <!-- <SideBar
+      :images="imageList"
+      @deleteItem="deleteItem"
+      class="sidebar"
+      style="float: right"
+    /> -->
+    <Garally :images="imageList" @deleteItem="deleteItem" id="Garally" />
     <!-- <MessageInOut
       :images="imageList"
       :porpInput="hello2"
@@ -18,11 +24,13 @@ import Garally from "@/components/Garally.vue";
 import MessageInOut from "../components/MessageInOut.vue";
 import { ImagePath } from "./ImagePath";
 import { component } from "node_modules/vue/types/umd";
+import SideBar from "@/components/SideBar.vue";
 
 @Component({
   components: {
     MessageInOut,
     Garally,
+    SideBar,
   },
 })
 export default class Home extends Vue {
@@ -47,3 +55,8 @@ export default class Home extends Vue {
   }
 }
 </script>
+<style>
+#Garally {
+  background-color: #fafafa;
+}
+</style>

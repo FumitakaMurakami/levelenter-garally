@@ -1,10 +1,40 @@
 <template>
   <div>
-    <button @click="filterA" id="c-button">3Dモデル</button>
+    <!-- <button @click="filterA" id="c-button">3Dモデル</button>
     <button @click="filterB" id="c-button">VRプログラム</button>
     <button @click="filterC" id="c-button">ARプログラム</button>
-    <button @click="clearFilter" id="c-button">全表示</button>
-
+    <button @click="clearFilter" id="c-button">全表示</button> -->
+    <div>
+      <b-button v-b-toggle.sidebar-right style="float: right"
+        ><font-awesome-icon icon="filter" />
+      </b-button>
+      <b-sidebar id="sidebar-right" title="フィルター" right shadow>
+        <div class="px-3 py-2">
+          <ul>
+            <li>
+              <b-button v-on:click="filterA" block variant="link,primary"
+                >VRプログラム</b-button
+              >
+            </li>
+            <li>
+              <b-button v-on:click="filterB" block variant="link,primary"
+                >3Dモデル</b-button
+              >
+            </li>
+            <li>
+              <b-button v-on:click="filterC" block variant="link,primary"
+                >ARプログラム</b-button
+              >
+            </li>
+            <li>
+              <b-button v-on:click="clearFilter" block variant="link,primary"
+                >全表示</b-button
+              >
+            </li>
+          </ul>
+        </div>
+      </b-sidebar>
+    </div>
     <div v-for="item of imagesModel" :key="item.name">
       <ul style="text-align:center;" id="Gallery">
         <li id="photo" ref="vrprogram">
@@ -15,7 +45,10 @@
               @click="linkpage(item.url)"
             />
           </a>
-          {{ item.class }}
+          {{ item.name }}
+          <p id="itemdata">
+            投稿日：{{ item.day }} 制作者：{{ item.producer }}
+          </p>
         </li>
       </ul>
     </div>
@@ -23,13 +56,15 @@
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
+import { filter } from "vue/types/umd";
 import { ImagePath } from "../views/ImagePath";
+import Config from "../../config.d";
 
 @Component({ components: {} })
 export default class Garally extends Vue {
   private inputMessage = "";
-  private filterKeyword = "";
-  private filterKeyword2 = "";
+  public filterKeyword = "";
+  public filterKeyword2 = "";
 
   @Prop({ default: [] })
   images!: ImagePath[];
@@ -42,13 +77,23 @@ export default class Garally extends Vue {
           item.class !== this.filterKeyword2)
     );
   }
-
+  /* get imagesModel() {
+    return this.images.filter(
+      (item) =>
+        this.$filterKeyword.filter1 == "" ||
+        (item.class !== this.$filterKeyword.filter1 &&
+          item.class !== this.$filterKeyword.filter2)
+    );
+  } */
   private filterB() {
     this.filterKeyword = "3dmodel";
     this.filterKeyword2 = "arprogram";
   }
   private filterA() {
+    console.log("filter-A");
+    console.log(this.images);
     this.filterKeyword = "vrprogram";
+    console.log(this.images);
     this.filterKeyword2 = "arprogram";
   }
   private filterC() {
@@ -102,31 +147,33 @@ li {
   list-style: none;
 }
 #Gallery {
-  width: 1200px;
-  margin: 0 auto;
+  width: 2000px;
+  margin: auto;
+  background-color: #fafafa;
 }
 #Gallery li {
   float: left;
-  width: 250px;
-  height: 200px;
-  margin: 0 20px 20px 0;
-  border: 5px solid #fff;
+  width: 400px;
+  height: 350px;
+  margin: 20px 30px 30px 30px;
   position: relative;
   z-index: 10;
   box-shadow: 2px 3px 3px #000;
   transition: transform 0.2s ease-out;
-  transform: scale(1) translate(-5px, -3px);
+  transform: scale(1) translate(-3px, -1px);
 }
 #Gallery li a img {
-  width: 250px;
-  height: 200px;
+  width: 400px;
+  height: 350px;
+  object-fit: fill;
 }
 
 #Gallery li:hover {
-  transform: scale(2) rotate(0deg) translate(0, 0);
+  transform: scale(1.5) rotate(0deg) translate(0, 0);
   z-index: 100;
 }
-.demo {
+
+/* .demo {
   font-family: sans-serif;
   border: 1px solid #eee;
   border-radius: 2px;
@@ -135,7 +182,7 @@ li {
   margin-bottom: 40px;
   user-select: none;
   overflow-x: auto;
-}
+} */
 #c-button {
   -webkit-writing-mode: horizontal-tb !important;
   -webkit-appearance: button;
@@ -151,5 +198,8 @@ li {
   font: 400 11px system-ui;
   width: 100px;
   height: 51px;
+}
+#itemdata {
+  font-size: 10px;
 }
 </style>

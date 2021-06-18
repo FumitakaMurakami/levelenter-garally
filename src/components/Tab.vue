@@ -1,30 +1,75 @@
 <template>
-  <div class="cp_navi">
+  <div>
+    <header>
+      <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
+      <h1 class="head-cl">
+        <a href="https://blockvrock.com/">
+          BLOCKVROCK
+        </a>
+        <p>
+          VR ARギャラリー
+        </p>
+      </h1>
+      <p class="company">
+        <img id="logo" src="./img/LEicon.png" alt="" />
+      </p>
+    </header>
+  </div>
+  <!-- <div class="cp_navi">
     <ul>
       <li>
         <a href="https://blockvrock.com/">BLOCKVROCK</a>
       </li>
-      <!-- <li>
-        <a href="#">Products <span class="caret"></span></a>
-        <div>
-          <ul>
-            <li><a href="#cat">cat</a></li>
-            <li><a href="#dog">dog</a></li>
-            <li><a href="#rabbit">rabbit</a></li>
-          </ul>
-        </div>
-      </li> -->
       <li><a href="https://www.levelenter.com/">Levelenter</a></li>
     </ul>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>
-.cp_navi {
-  /* background-color: #ffffff; */
-  /* border: 1px solid #dedede; */
+.head-cl {
+  padding: 30px 0 10px 10px;
+  display: inline-block;
+}
+a {
+  color: #3a302d;
+  text-decoration: none;
+  /* font-family: canada-type-gibson, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", YuGothic, "ヒラギノ角ゴシック Pro",
+    "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif; */
+}
+p {
+  margin: 3px 0 0 20px !important;
+  font-size: 15px;
+  display: inline-block;
+  font-family: canada-type-gibson, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", YuGothic, "ヒラギノ角ゴシック Pro",
+    "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+}
+#logo {
+  height: 10em;
+  width: 15em;
+
+  margin-left: auto;
+  margin-top: 0px;
+  display: flex;
+}
+.company {
+  margin: 0px 200px 0 20px !important;
+  float: right;
+  height: 6em;
+  width: 10em;
+}
+/* img {
+  width: 140px;
+  height: 50px;
+  object-fit: fill;
+} */
+/* .cp_navi {
+
   border-radius: 4px;
-  /* box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055); */
+
 
   font-style: italic;
   display: block;
@@ -64,9 +109,7 @@
 .cp_navi > ul > li:hover {
   background-color: rgb(218, 60, 65);
 }
-/* .cp_navi > ul > li:hover > a {
-  color: rgb(255, 255, 255);
-} */
+
 .cp_navi > ul > li:hover > a > .caret {
   border-top-color: rgb(255, 255, 255);
 }
@@ -99,5 +142,5 @@
 }
 .cp_navi > ul > li > div ul > li:hover > a {
   background-color: rgba(255, 255, 255, 0.1);
-}
+} */
 </style>
