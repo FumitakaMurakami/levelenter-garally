@@ -53,7 +53,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text" id="itemdata">
-              投稿日：{{ item.day }} 制作者：{{ item.producer }}
+              投稿日：{{ item.day }} <br />制作者：{{ item.producer }}
             </p>
           </div>
         </div>

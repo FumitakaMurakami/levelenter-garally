@@ -64,7 +64,7 @@ export default class Home extends Vue {
 }
 </script>
 <style>
-#Garally {
+/* #Garally {
   background-color: #fafafa;
-}
+} */
 </style>
