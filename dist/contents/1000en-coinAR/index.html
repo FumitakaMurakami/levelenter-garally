@@ -1,0 +1,206 @@
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script>
+  /* window.onload = function () {
+    document
+      .querySelector(".say-hi-button")
+      .addEventListener("click", function () {
+        alert("カメラに1000円札を写してみよう");
+      });
+  }; */
+
+  let fnc = function clear() {
+    let inf = document.getElementById("info");
+    console.log(inf);
+    inf.classList.remove("loader");
+    inf.classList.toggle("after-loader");
+    console.log("1");
+  };
+  window.setTimeout(fnc, 5000);
+  AFRAME.registerComponent("registerevents", {
+    init: function () {
+      let marker = this.el;
+
+      // マーカーを検出したイベントの登録
+      marker.addEventListener("markerFound", function () {
+        let markerId = marker.id;
+        console.log("markerFound", markerId);
+
+        let sub = document.getElementById("sub");
+        console.log(sub);
+        sub.innerHTML = "<div>1000円札を読み込みました！</div>";
+        /* let coin = document.getElementById("coin");
+        console.log(coin);
+        coin.setAttribute(
+          "animation",
+          "property: rotation; to: 0 360 0; loop: true; dur: 10000"
+        ); */
+      });
+
+      // マーカーを見失ったイベントの登録
+      marker.addEventListener("markerLost", function () {
+        let markerId = marker.id;
+        console.log("markerLost", markerId);
+
+        let sub = document.getElementById("sub");
+        console.log(sub);
+        sub.innerHTML = "<div>1000円札を見失いました…</div>";
+      });
+    },
+  });
+</script>
+<style>
+  .arjs-loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
+  .loader {
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .after-loader {
+    text-align: center;
+    font-size: 1em;
+    color: transparent;
+  }
+  .note {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    z-index: 10;
+    color: white;
+    font-size: 2.2em;
+  }
+
+  /* .say-hi-button {
+    padding: 0.25em;
+    border-radius: 4px;
+    border: none;
+    background: white;
+    color: black;
+    width: 4em;
+    height: 2em;
+  } */
+</style>
+
+<body style="margin: 0px; overflow: hidden">
+  <div class="note" id="sub">
+    <div>1000札を写してください</div>
+  </div>
+  <!-- <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div> -->
+  <div class="loader" id="info">
+    <div>カメラに1000円札を写してみよう！</div>
+  </div>
+  <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+  >
+    <!-- <a-assets>
+    <a-asset-item id="sample" src="https://fumitakamurakami.github.io/ARJS/100yen_002.glb"></a-asset-item>
+  </a-assets> -->
+    <a-nft
+      type="nft"
+      url="https://fumitakamurakami.github.io/ARJS/1000en"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+      registerevents
+    >
+      <!-- <a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        scale="5 5 5"
+        position="50 150 0"
+      > -->
+
+      <a-entity
+        id="coin"
+        gltf-model="./100yen_002.glb"
+        position="30 0 -40"
+        scale="100 100 100"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="40 2 -40"
+        scale="100 100 100"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="65 0 -40"
+        scale="100 100 100"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="80 0 -10"
+        scale="100 100 100"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="110 0 -30"
+        scale="100 100 100"
+        rotation="180 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="30 0 10"
+        scale="100 100 100"
+        rotation="180 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="60 0 20"
+        scale="100 100 100"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="45 2 10"
+        scale="100 100 100"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="0 0 20"
+        scale="100 100 100"
+        rotation="180 0 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="./100yen_002.glb"
+        position="0 0 -10"
+        scale="100 100 100"
+      ></a-entity>
+    </a-nft>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+<!-- コメント -->
