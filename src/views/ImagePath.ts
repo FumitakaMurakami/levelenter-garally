@@ -4,4 +4,7 @@ export class ImagePath {
   path: string = "";
   class: string = "";
   url: any = "";
+  day: string = "";
+  producer: string = "";
+  publishing: string = "";
 }

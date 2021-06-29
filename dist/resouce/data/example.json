@@ -6,16 +6,18 @@
     "class": "vrprogram",
     "url": "https://blockvrocks.com/levelenter-garally/contents/Speech-to-text/index.html",
     "day": "2021/06/16",
-    "producer": "Fumitaka Murakami"
+    "producer": "Fumitaka Murakami",
+    "publishing": "private"
   },
   {
     "number": 1,
     "name": "VRオフィス",
     "path": "./resouce/3dmodel-1.png",
     "class": "3dmodel",
-    "url": "https://fumitakamurakami.github.io/vroffice/",
+    "url": "https://blockvrocks.com/levelenter-garally/contents/3d-office/index.html",
     "day": "2021/06/16",
-    "producer": "Sayaka Nakagawa"
+    "producer": "Sayaka Nakagawa",
+    "publishing": "public"
   },
   {
     "number": 2,
@@ -24,7 +26,8 @@
     "class": "arprogram",
     "url": "https://blockvrocks.com/levelenter-garally/contents/1000en-coinAR/index.html",
     "day": "2021/06/16",
-    "producer": "Fumitaka Murakami"
+    "producer": "Fumitaka Murakami",
+    "publishing": "public"
   },
   {
     "number": 3,
@@ -33,7 +36,8 @@
     "class": "3dmodel",
     "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/",
     "day": "2021/06/16",
-    "producer": "Fumitaka Murakami"
+    "producer": "Fumitaka Murakami",
+    "publishing": "public"
   },
   {
     "number": 4,
@@ -42,6 +46,7 @@
     "class": "3dmodel",
     "url": "https://fumitakamurakami.github.io/VR-Speech-to-text/",
     "day": "2021/06/16",
-    "producer": "Fumitaka Murakami"
+    "producer": "Fumitaka Murakami",
+    "publishing": "public"
   }
 ]

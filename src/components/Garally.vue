@@ -77,8 +77,9 @@ export default class Garally extends Vue {
   get imagesModel() {
     return this.images.filter(
       (item) =>
-        this.filterKeyword == "" ||
-        (item.class !== this.filterKeyword &&
+        (item.publishing === "public" && this.filterKeyword == "") ||
+        (item.publishing === "public" &&
+          item.class !== this.filterKeyword &&
           item.class !== this.filterKeyword2)
     );
   }
@@ -91,13 +92,13 @@ export default class Garally extends Vue {
     );
   } */
   private filterB() {
-    this.filterKeyword = "3dmodel";
+    this.filterKeyword = "vrprogram";
     this.filterKeyword2 = "arprogram";
   }
   private filterA() {
     console.log("filter-A");
     console.log(this.images);
-    this.filterKeyword = "vrprogram";
+    this.filterKeyword = "3dmodel";
     console.log(this.images);
     this.filterKeyword2 = "arprogram";
   }

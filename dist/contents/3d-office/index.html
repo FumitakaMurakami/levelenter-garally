@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="https://live.staticflickr.com/65535/48920416797_d5f0224199_h.jpg" color="#FFFFFF"></a-sky>
+      <a-assets>
+        <a-asset-item id="chair" src="./office_chair.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="desk" src="./desk_F.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="imac" src="./le_imac_001.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="keybord" src="./le_keybord_001.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-assets>
+        <a-asset-item id="light" src="./le_desklight.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-asset-item id="plant" src="./le_plant_001.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-asset-item id="rufdesk" src="./le_rufdesk_001.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-asset-item id="floor" src="./le_floor.glb"></a-asset-item>
+        <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-asset-item id="rufchair" src="./le_rufchair.glb"></a-asset-item>
+      <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-asset-item id="mado" src="./le_mado_001.glb"></a-asset-item>
+      <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      <a-asset-item id="garasu" src="./le_garasu_002.glb"></a-asset-item>
+      <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+      </a-assets>
+      
+      <a-entity
+        gltf-model="#chair"
+        position="-0.5 -2.2 -7"
+        scale="1.3 1.3 1.3"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#desk"
+        position="0 -3 -8"
+        scale="5 5 5"
+        rotation="0 180 0"
+    ></a-entity>
+        <a-entity
+        gltf-model="#chair"
+        position="-4 -2.2 -7.8"
+        scale="1.3 1.3 1.3"
+        rotation="0 180 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#desk"
+        position="-3.5 -3 -8"
+        scale="5 5 5"
+        rotation="0 180 0"
+    ></a-entity>
+      <a-entity
+        gltf-model="#desk"
+        position="0 -3 -9.8"
+        scale="5 5 5"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#desk"
+        position="-3.5 -3 -9.8"
+        scale="5 5 5"
+        rotation="0 0 0"
+  ></a-entity>
+    <a-entity
+        gltf-model="#chair"
+        position="-3 -2.2 -11"
+        scale="1.5 1.5 1.5"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#chair"
+        position="0.5 -2.2 -11"
+        scale="1.5 1.5 1.5"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#desk"
+        position="-10 -3 -8"
+        scale="5 5 7"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#chair"
+        position="-11.5 -2 -9"
+        scale="1.8 1.8 1.8"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#imac"
+        position="-0.5 -0.5 -8.3"
+        scale="0.5 0.5 0.5"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#imac"
+        position="-3.5 -0.5 -8.3"
+        scale="0.5 0.5 0.5"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#imac"
+        position="-3.5 -0.5 -9.3"
+        scale="0.5 0.5 0.5"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#imac"
+        position="-0.5 -0.5 -9.3"
+        scale="0.5 0.5 0.5"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#imac"
+        position="-9.5 -0.5 -8.3"
+        scale="0.6 0.6 0.6"
+        rotation="0 270 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#keybord"
+        position="-1 -1.2 -7.5"
+        scale="0.03 0.03 0.03"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#keybord"
+        position="-4.5 -1.2 -7.5"
+        scale="0.03 0.03 0.03"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#keybord"
+        position="1 -1.2 -10"
+        scale="0.03 0.03 0.03"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#keybord"
+        position="-2.5 -1.2 -10"
+        scale="0.03 0.03 0.03"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#keybord"
+        position="-10.5 -1.2 -9"
+        scale="0.03 0.03 0.03"
+        rotation="0 270 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#light"
+        position="-10 -0.5 -7"
+        scale="1 1 1"
+        rotation="0 140 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#plant"
+        position="10 -3 -15"
+        scale="1 1 1"
+        rotation="0 140 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#plant"
+        position="-9 -3 -17"
+        scale="1 1 1"
+        rotation="0 140 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufdesk"
+        position="-4 -3 -3"
+        scale="1.2 1.2 1.2"
+        rotation="0 110 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufdesk"
+        position="4 -3 -2"
+        scale="1.2 1.2 1.2"
+        rotation="0 110 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#floor"
+        position="0.3 -3 -15"
+        scale="0.3 0.2 0.26"
+        rotation="0 0 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="2 -3 -2.5"
+        scale="0.8 0.8 0.8"
+        rotation="0 80 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="6 -3 -2.5"
+        scale="0.8 0.8 0.8"
+        rotation="0 -100 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="-2 -3 -3"
+        scale="0.8 0.8 0.8"
+        rotation="0 -100 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="-7 -3 -4"
+        scale="0.8 0.8 0.8"
+        rotation="0 80 0"
+    ></a-entity>
+
+    <a-entity
+        gltf-model="#mado"
+        position="0 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="8 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="16 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+
+    <a-entity
+        gltf-model="#mado"
+        position="-8 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="-16 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+
+    <a-entity
+        gltf-model="#mado"
+        position="-20 5 -26.5"
+        scale="1 1 1.5"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="-20 5 -18.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="-20 5 -10.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="-20 5 -2.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+    ></a-entity>
+
+    <a-entity
+        gltf-model="#mado"
+        position="20 5 -26.5"
+        scale="1 1 1.5"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="20 5 -18.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="20 5 -10.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="20 5 -2.5"
+        scale="1 1 1"
+        rotation="0 180 0"
+    ></a-entity>
+    
+    <!--上-->
+    <a-entity
+        gltf-model="#mado"
+        position="0 15 -17"
+        scale="3 2.6 5"
+        rotation="180 180 90"
+    ></a-entity>
+        
+    <a-entity
+        gltf-model="#mado"
+        position="0 5 2"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="8 5 2"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#mado"
+        position="16 5 2"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+      gltf-model="#mado"
+      position="-8 5 2"
+      scale="1 1 1"
+      rotation="0 90 0"
+  ></a-entity>
+  <a-entity
+      gltf-model="#mado"
+      position="-16 5 2"
+      scale="1 1 1"
+      rotation="0 90 0"
+  ></a-entity>
+
+    <!--奥デスク-->
+    <a-entity
+        gltf-model="#rufdesk"
+        position="4 -3 -20"
+        scale="1.2 1.2 1.2"
+        rotation="0 110 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufdesk"
+        position="-4 -3 -20"
+        scale="1.2 1.2 1.2"
+        rotation="0 110 0"
+    ></a-entity>
+
+    <!--奥椅子-->
+    <a-entity
+        gltf-model="#rufchair"
+        position="2 -3 -20"
+        scale="0.8 0.8 0.8"
+        rotation="0 80 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="6 -3 -20"
+        scale="0.8 0.8 0.8"
+        rotation="0 -100 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="-2 -3 -20"
+        scale="0.8 0.8 0.8"
+        rotation="0 -100 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#rufchair"
+        position="-7 -3 -20"
+        scale="0.8 0.8 0.8"
+        rotation="0 80 0"
+    ></a-entity>
+
+    
+
+    <!--奥-->
+    <a-entity
+        gltf-model="#garasu"
+        position="0 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="8 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="16 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-8 5 -32"
+        scale="1 1 1"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-16 5 -32"
+        scale="1 1 1.3"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+
+    <!--左-->
+    <a-entity
+        gltf-model="#garasu"
+        position="-20 5 -26.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-20 5 -18.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-20 5 -10.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-20 5 -2.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+
+    <!--右-->
+    <a-entity
+        gltf-model="#garasu"
+        position="20 5 -26.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="20 5 -18.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="20 5 -10.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="20 5 -2.5"
+        scale="1 1 1.3"
+        rotation="0 180 0"
+        opacity="0.1"
+    ></a-entity>
+
+    <!--上-->
+    <a-entity
+        gltf-model="#garasu"
+        position="0 15 -17"
+        scale="5 2.5 5"
+        rotation="180 180 90"
+        opacity="0.1"
+    ></a-entity>
+
+    <!--手前-->
+    <a-entity
+        gltf-model="#garasu"
+        position="0 5 2"
+        scale="1 1 1.3"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="8 5 2"
+        scale="1 1 1.3"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="16 5 2"
+        scale="1 1 1.3"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-8 5 2"
+        scale="1 1 1.3"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    <a-entity
+        gltf-model="#garasu"
+        position="-16 5 2"
+        scale="1 1 1.3"
+        rotation="0 90 0"
+        opacity="0.1"
+    ></a-entity>
+    </a-scene>
+  </body>
+</html>
+<!-- gltfも試したけどなぜか動かねぇ、エラー解消までgltfは使えなさそう　-->
