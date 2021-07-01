@@ -5,9 +5,7 @@
       <div class="py-5 px-5 d-flex align-items-center">
         <h1><a href="https://blockvrock.com/"> BLOCKVROCK </a></h1>
         <p class="h-100 mx-5 pt-2">
-          VR<br class="visible-xs-block" />AR<br
-            class="visible-xs-block"
-          />ギャラリー
+          VR ARギャラリー
         </p>
       </div>
       <!-- <p class="company">
