@@ -1,0 +1,121 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Aframe example Stand on Ground</title>
+  </head>
+
+  <script type="text/javascript">
+    /**
+     * 地面に立つためのコンポーネント（前回記事の範囲）
+     */
+    AFRAME.registerComponent("stand-on", {
+      schema: {
+        raycaster: { type: "selector" },
+      },
+      dependency: ["raycaster"],
+      init: function() {
+        this.el.addEventListener("raycaster-intersection", (evt) => {
+          if (evt.target !== this.data.raycaster) return; // 対応するレイキャスターのみ反応
+          this.raycaster = evt.target.components.raycaster;
+          this.target_el = evt.detail.els[0];
+        });
+
+        this.el.addEventListener("raycaster-intersection-cleared", (evt) => {
+          if (evt.target !== this.data.raycaster) return;
+          this.raycaster = null;
+          this.target_el = null;
+        });
+      },
+
+      tick: function() {
+        if (!this.raycaster || !this.target_el) return;
+        const item = this.raycaster.getIntersection(this.target_el);
+        this.el.object3D.position.y = item.point.y + 1.7;
+      },
+    });
+
+    /**
+     * 前後左右のヒット（今回記事の範囲）
+     */
+    AFRAME.registerComponent("wall-collider", {
+      schema: {
+        raycaster: { type: "selector" },
+      },
+      multiple: true,
+      dependency: ["raycaster"],
+      init: function() {
+        this.el.addEventListener("raycaster-intersection", (evt) => {
+          console.log(evt.target);
+          if (evt.target !== this.data.raycaster) return; // 対応するレイキャスターのみ反応
+          this.face = evt.detail.intersections[0].face.normal;
+        });
+
+        this.el.addEventListener("raycaster-intersection-cleared", (evt) => {
+          if (evt.target.id !== this.data.id) return;
+          this.face = null;
+        });
+      },
+
+      tick: function() {
+        if (!this.face) return;
+        this.el.object3D.position.add(this.face.multiplyScalar(0.5));
+      },
+    });
+  </script>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="envGlb" src="./Crater.glb"></a-asset-item>
+      </a-assets>
+
+      <a-camera
+        wall-collider__f="raycaster:#raycaster-f"
+        wall-collider__b="raycaster:#raycaster-b"
+        wall-collider__r="raycaster:#raycaster-r"
+        wall-collider__l="raycaster:#raycaster-l"
+        stand-on="raycaster:#stand-on-ray"
+      >
+        <a-entity
+          id="stand-on-ray"
+          raycaster="objects: .ground; direction:0 -1 0"
+        ></a-entity>
+
+        <!-- 四方のレイキャスターを定義 -->
+        <a-entity
+          id="raycaster-f"
+          raycaster="objects: .collidable; far: 1; direction:0 0 -1"
+        ></a-entity>
+        <a-entity
+          id="raycaster-b"
+          raycaster="objects: .collidable; far: 1; direction:0 0 1"
+        ></a-entity>
+        <a-entity
+          id="raycaster-l"
+          raycaster="objects: .collidable; far: 1; direction:1 0 0"
+        ></a-entity>
+        <a-entity
+          id="raycaster-r"
+          raycaster="objects: .collidable; far: 1; direction:-1 0 0"
+        ></a-entity>
+      </a-camera>
+
+      <a-gltf-model
+        position="0 0 0"
+        src="#envGlb"
+        class="ground"
+        animation-mixer=""
+      ></a-gltf-model>
+
+      <a-sky color="skyblue"></a-sky>
+      <a-box
+        color="red"
+        class="collidable"
+        position="0 1 -4"
+        scale="2 2 2"
+      ></a-box>
+    </a-scene>
+  </body>
+</html>
