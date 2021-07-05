@@ -78,5 +78,15 @@
     "day": "2021/07/01",
     "producer": "Fumitaka Murakami",
     "publishing": "public"
+  },
+  {
+    "number": 8,
+    "name": "google model-viewerサンプル",
+    "path": "./resouce/modelviewer.png",
+    "class": "3dmodel",
+    "url": "https://blockvrocks.com/examples/model-viewer/",
+    "day": "2021/07/01",
+    "producer": "Dai Yamamoto",
+    "publishing": "public"
   }
 ]
