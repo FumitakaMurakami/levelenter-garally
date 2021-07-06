@@ -7,7 +7,8 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/Speech-to-text/index.html",
     "day": "2021/06/16",
     "producer": "Fumitaka Murakami",
-    "publishing": "private"
+    "publishing": "private",
+    "Explanatory": "Google提供のAPI、Speech to Textを使った音声認識VRプログラム。"
   },
   {
     "number": 1,
@@ -17,7 +18,8 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/3d-office/index.html",
     "day": "2021/06/16",
     "producer": "Sayaka Nakagawa",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "仮想空間上にオフィスを3Dモデルを配置したVRオフィス。"
   },
   {
     "number": 2,
@@ -27,7 +29,8 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/1000en-coinAR/index.html",
     "day": "2021/06/16",
     "producer": "Fumitaka Murakami",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "1000円札をマーカーとした、ARプログラム。1000円札を写すことで1000円分の100円玉3Dモデルが表示されます。"
   },
   {
     "number": 3,
@@ -37,7 +40,8 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/raycaster-sample/index.html",
     "day": "2021/05/05",
     "producer": "Dai Yamamoto",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "VR空間上で3Dオブジェクトに当たり判定を実装したVRプログラム。"
   },
   {
     "number": 4,
@@ -47,7 +51,8 @@
     "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=171f7dfc8fe196",
     "day": "2021/06/16",
     "producer": "Dai Yamamoto",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "複数ユーザーが同じVR空間に同時接続することのできるVR博物館。内部で音声通話も可能。"
   },
   {
     "number": 5,
@@ -57,7 +62,8 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/ar-video/AR.html",
     "day": "2021/07/01",
     "producer": "Fumitaka Murakami",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "AR空間上での動画再生サンプル。マーカーを読み込むと動画が再生され、ミュート解除ボタンを押すことで音声も流れます。"
   },
   {
     "number": 6,
@@ -67,7 +73,8 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/vr-video/index.html",
     "day": "2021/07/01",
     "producer": "Fumitaka Murakami",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "VR空間上での動画再生サンプル。自動再生、クリックによる再生イベントの制御、ミュート解除など実装"
   },
   {
     "number": 7,
@@ -77,16 +84,18 @@
     "url": "https://blockvrocks.com/levelenter-garally/contents/treasure/index.html",
     "day": "2021/07/01",
     "producer": "Fumitaka Murakami",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "AR位置情報サービスLocation baseを使った宝探しゲーム。GPS情報を取得し、ランダムに配置される3Dモデルを探索します。"
   },
   {
     "number": 8,
-    "name": "google model-viewerサンプル",
+    "name": "マーカーレス床面検知AR",
     "path": "./resouce/modelviewer.png",
     "class": "3dmodel",
     "url": "https://blockvrocks.com/examples/model-viewer/",
     "day": "2021/07/01",
     "producer": "Dai Yamamoto",
-    "publishing": "public"
+    "publishing": "public",
+    "Explanatory": "Googleの提供する3Dモデル表示API、model-viewerのサンプル。"
   }
 ]

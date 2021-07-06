@@ -43,7 +43,10 @@
         :key="item.name"
         class="col-xl-3 col-lg-4 col-md-6 col-sm-12"
       >
-        <div class="card py-3 my-3" style="objectfit: cover">
+        <div
+          class="card py-3 my-3 h-100 w-100"
+          style="objectfit: cover height:100%;"
+        >
           <img
             class="bd-placeholder-img card-img-top"
             :src="item.path"
@@ -54,6 +57,9 @@
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text" id="itemdata">
               投稿日：{{ item.day }} <br />制作者：{{ item.producer }}
+            </p>
+            <p class="card-text fs-6 lh-1" id="itemdata">
+              {{ item.Explanatory }}
             </p>
           </div>
         </div>
@@ -142,8 +148,9 @@ export default class Garally extends Vue {
 </script>
 <style scoped>
 img {
-  height: 240px;
-  object-fit: contain;
+  width: 100%;
+  height: 136.5px;
+  object-fit: cover;
 }
 /*ul,
 li,

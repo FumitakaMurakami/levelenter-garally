@@ -7,4 +7,5 @@ export class ImagePath {
   day: string = "";
   producer: string = "";
   publishing: string = "";
+  Explanatory: string = "";
 }
