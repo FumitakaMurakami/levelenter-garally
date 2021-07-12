@@ -41,12 +41,9 @@
       <div
         v-for="item of imagesModel"
         :key="item.name"
-        class="col-xl-3 col-lg-4 col-md-6 col-sm-12"
+        class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3"
       >
-        <div
-          class="card py-3 my-3 h-100 w-100"
-          style="objectfit: cover height:100%;"
-        >
+        <div class="card h-100 w-100" style="objectfit: cover height:100%;">
           <img
             class="bd-placeholder-img card-img-top"
             :src="item.path"
