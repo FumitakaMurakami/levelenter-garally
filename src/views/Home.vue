@@ -18,9 +18,11 @@
       :porpInput="hello2"
       @deleteItem="deleteItem"
       /> -->
-
       <!-- <p v-html="htmlTest"></p> -->
     </main>
+    <footer>
+      <Hooter />
+    </footer>
   </div>
 </template>
 
@@ -33,12 +35,14 @@ import { ImagePath } from "./ImagePath";
 import { component } from "node_modules/vue/types/umd";
 import SideBar from "@/components/SideBar.vue";
 import Tab from "@/components/Tab.vue";
+import Hooter from "@/components/Footer.vue";
 @Component({
   components: {
     MessageInOut,
     Garally,
     SideBar,
     Tab,
+    Hooter,
   },
 })
 export default class Home extends Vue {

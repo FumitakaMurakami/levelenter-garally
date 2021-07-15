@@ -3,9 +3,9 @@
     <header>
       <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
       <div class="py-5 px-5 d-flex align-items-center">
-        <h1><a href="https://blockvrock.com/"> BLOCKVROCK </a></h1>
+        <h1><a href="https://blockvrock.com/"> levelenter </a></h1>
         <p class="h-100 mx-5 pt-2">
-          VR ARギャラリー
+          VR AR ギャラリー
         </p>
       </div>
       <!-- <p class="company">
