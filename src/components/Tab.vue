@@ -2,9 +2,23 @@
   <div>
     <header>
       <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
-      <div class="py-5 px-5 d-flex align-items-center">
-        <h1><a href="https://blockvrock.com/"> levelenter </a></h1>
-        <p class="h-100 mx-5 pt-2">
+      <div class="py-5 px-5 d-flex align-items-center d-none d-md-flex">
+        <h1><a href="https://blockvrock.com/"> Level Enter inc.</a></h1>
+        <p class="h-100 mx-5 pt-2 ">
+          VR AR ギャラリー
+        </p>
+        <div>
+          <img
+            src="../assets/samplepage.png"
+            alt="logo-footer"
+            data-at2x="assets/img/logo.png"
+            style="width:130px; height:130px; object-fit:cover;"
+          />
+        </div>
+      </div>
+      <div class="py-5 px-5 align-items-center d-block d-md-none">
+        <h1><a href="https://blockvrock.com/"> Level Enter inc.</a></h1>
+        <p class="h-100 pt-2">
           VR AR ギャラリー
         </p>
       </div>

@@ -10,11 +10,14 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import VueRouter from "vue-router";
+import VueHead from "vue-head";
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-
+Vue.use(VueHead);
+Vue.use(VueRouter);
 library.add(faUserSecret, fas, far, fab);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

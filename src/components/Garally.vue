@@ -5,10 +5,16 @@
     <button @click="filterC" id="c-button">ARプログラム</button>
     <button @click="clearFilter" id="c-button">全表示</button> -->
     <div>
-      <b-button v-b-toggle.sidebar-right style="float: right"
-        ><font-awesome-icon icon="filter" />
-      </b-button>
-
+      <div class="fixed-top pt-5 px-5 d-none d-md-block">
+        <b-button v-b-toggle.sidebar-right style="float: right"
+          ><font-awesome-icon icon="filter" />
+        </b-button>
+      </div>
+      <div class="fixed-top pt-5 px-2 d-block d-md-none">
+        <b-button v-b-toggle.sidebar-right style="float: right"
+          ><font-awesome-icon icon="filter" />
+        </b-button>
+      </div>
       <b-sidebar id="sidebar-right" title="フィルター" right shadow>
         <div class="px-3 py-2">
           <ul>
@@ -55,7 +61,7 @@
             <p class="card-text" id="itemdata">
               投稿日：{{ item.day }} <br />制作者：{{ item.producer }}
             </p>
-            <p class="card-text fs-6 lh-1" id="itemdata">
+            <p class="card-text fs-6 lh-base" id="itemdata">
               {{ item.Explanatory }}
             </p>
           </div>

@@ -9,10 +9,10 @@
               src="../assets/LEicon.png"
               alt="logo-footer"
               data-at2x="assets/img/logo.png"
-              style="width:60px; height:50px; object-fit:cover;"
+              style="width:60px; height:60px; object-fit:cover;"
             />
             <div class="footer-contact align-items-center  mx-2 pt-3">
-              <p>levelenter</p>
+              <p>Level Enter inc.</p>
             </div>
           </div>
           <div class="col-md-3 footer-contact ">
@@ -63,8 +63,8 @@
                   <a href="http://www.twitter.com/wix" class="text-reset">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="50"
-                      height="50"
+                      width="30"
+                      height="30"
                       fill="currentColor"
                       class="bi bi-twitter"
                       viewBox="0 0 16 16"
@@ -75,15 +75,15 @@
                     </svg>
                   </a>
                 </p>
-                <p class="mx-5 text-reset">
+                <p class="mx-2 text-reset">
                   <a
                     href="https://www.facebook.com/pg/levelenter/about/?ref=page_internal"
                     class="text-reset"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="50"
-                      height="50"
+                      width="30"
+                      height="30"
                       fill="currentColor"
                       class="bi bi-facebook"
                       viewBox="0 0 16 16"
