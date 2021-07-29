@@ -4,6 +4,21 @@
     <button @click="filterB" id="c-button">VRプログラム</button>
     <button @click="filterC" id="c-button">ARプログラム</button>
     <button @click="clearFilter" id="c-button">全表示</button> -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">認証コード入力欄</span>
+      </div>
+      <input
+        id="pass"
+        type="text"
+        class="form-control"
+        placeholder="パスコード入力"
+        aria-label="passcode"
+        aria-describedby="basic-addon1"
+        value="levelenter"
+        v-model="inputPassword"
+      />
+    </div>
     <div>
       <div class="fixed-top pt-5 px-5 d-none d-md-block">
         <b-button v-b-toggle.sidebar-right style="float: right"
@@ -80,18 +95,47 @@ export default class Garally extends Vue {
   public filterKeyword = "";
   public filterKeyword2 = "";
 
+  // created() {
+  //   //   console.log(this.inputPassword);
+  //   // this.inputPassword = "abc";
+  // }
+
+  public _inputPassword = "";
+  public pass = this.inputPassword;
+  private get inputPassword() {
+    return this._inputPassword;
+  }
+
+  private set inputPassword(value: string) {
+    console.log("inputPassword", value);
+    /* this._inputPassword = value; */
+    this._inputPassword = value;
+    this.pass = this._inputPassword;
+    console.log(this._inputPassword);
+  }
   @Prop({ default: [] })
   images!: ImagePath[];
 
   get imagesModel() {
-    return this.images.filter(
-      (item) =>
-        (item.publishing === "public" && this.filterKeyword == "") ||
-        (item.publishing === "public" &&
-          item.class !== this.filterKeyword &&
-          item.class !== this.filterKeyword2)
-    );
+    console.log(this.pass);
+    if (this.pass == "levelenter") {
+      return this.images.filter(
+        (item) =>
+          this.filterKeyword == "" ||
+          (item.class !== this.filterKeyword &&
+            item.class !== this.filterKeyword2)
+      );
+    } else {
+      return this.images.filter(
+        (item) =>
+          (item.publishing === "public" && this.filterKeyword == "") ||
+          (item.publishing === "public" &&
+            item.class !== this.filterKeyword &&
+            item.class !== this.filterKeyword2)
+      );
+    }
   }
+
   /* get imagesModel() {
     return this.images.filter(
       (item) =>
