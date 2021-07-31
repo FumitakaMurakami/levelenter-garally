@@ -28,6 +28,8 @@ function run(id) {
 
 function treasureFound() {
   /* run("button1"); */
+  const treasurebox = document.getElementById("a-treasure");
+  treasurebox.setAttribute("gltf-model", "#opentreasurebox");
   alert("宝を入手しました！");
 }
 function getRandomArbitrary(min, max) {
