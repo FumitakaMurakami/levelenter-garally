@@ -29,7 +29,7 @@ function run(id) {
 function treasureFound() {
   /* run("button1"); */
   const treasurebox = document.getElementById("a-treasure");
-  treasurebox.setAttribute("gltf-model", "#opentreasurebox");
+  treasurebox.setAttribute("gltf-model", "./model/le_takarabako_open.glb");
   alert("宝を入手しました！");
 }
 function getRandomArbitrary(min, max) {
