@@ -1,4 +1,4 @@
-function run(id) {
+/* function run(id) {
   console.log("#" + id);
   const mid = "#" + id;
   var entity = document.querySelector(mid);
@@ -24,7 +24,7 @@ function run(id) {
     direction: "alternate",
     loop: 1,
   });
-}
+} */
 
 function treasureFound() {
   /* run("button1"); */
@@ -74,8 +74,8 @@ function geoSetup() {
   const success = (position) => {
     const { latitude, longitude } = position.coords;
 
-    randomlatitude = getRandomArbitrary(0.0005, 0.001);
-    randomlongitude = getRandomArbitrary(0.0005, 0.001);
+    const randomlatitude = getRandomArbitrary(0.0005, 0.001);
+    const randomlongitude = getRandomArbitrary(0.0005, 0.001);
 
     let treasurelatitude = latitude + randomlongitude;
     let treasurelongitude = longitude + randomlongitude;
