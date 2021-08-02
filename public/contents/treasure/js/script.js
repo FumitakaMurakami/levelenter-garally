@@ -30,8 +30,8 @@ function treasureFound() {
   /* run("button1"); */
   const treasurebox = document.getElementById("a-treasure");
   treasurebox.setAttribute("gltf-model", "./model/le_takarabako_open.glb");
-  /* alert("宝を入手しました！"); */
-  alert(treasurebox);
+  setTimeout(alert("宝を入手しました！"), 1000);
+  /* alert(treasurebox); */
 }
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
