@@ -6,7 +6,14 @@
     <button @click="clearFilter" id="c-button">全表示</button> -->
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1">認証コード入力欄</span>
+        <button
+          class="btn btn-outline-secondary"
+          @click="onClick"
+          type="button"
+          id="button0addon1"
+        >
+          認証コード
+        </button>
       </div>
       <input
         id="pass"
@@ -94,6 +101,8 @@ export default class Garally extends Vue {
   private inputMessage = "";
   public filterKeyword = "";
   public filterKeyword2 = "";
+  public password = "public";
+  public password2 = "";
 
   // created() {
   //   //   console.log(this.inputPassword);
@@ -110,7 +119,6 @@ export default class Garally extends Vue {
     console.log("inputPassword", value);
     /* this._inputPassword = value; */
     this._inputPassword = value;
-    this.pass = this._inputPassword;
     console.log(this._inputPassword);
   }
   @Prop({ default: [] })
@@ -118,21 +126,27 @@ export default class Garally extends Vue {
 
   get imagesModel() {
     console.log(this.pass);
-    if (this.pass == "levelenter") {
-      return this.images.filter(
-        (item) =>
-          this.filterKeyword == "" ||
-          (item.class !== this.filterKeyword &&
-            item.class !== this.filterKeyword2)
-      );
+
+    return this.images.filter(
+      (item) =>
+        (item.publishing === this.password2 && this.filterKeyword == "") ||
+        (item.publishing === this.password && this.filterKeyword == "") ||
+        (item.publishing === this.password &&
+          item.class !== this.filterKeyword &&
+          item.class !== this.filterKeyword2) ||
+        (item.publishing === this.password &&
+          item.class !== this.filterKeyword &&
+          item.class !== this.filterKeyword2)
+    );
+  }
+  public onClick() {
+    if (this._inputPassword == "levelenter") {
+      this.password2 = "private";
+    } else if (this._inputPassword == "") {
+      alert("パスワードを入力してください");
     } else {
-      return this.images.filter(
-        (item) =>
-          (item.publishing === "public" && this.filterKeyword == "") ||
-          (item.publishing === "public" &&
-            item.class !== this.filterKeyword &&
-            item.class !== this.filterKeyword2)
-      );
+      alert("パスワードが違います");
+      this.password2 = "";
     }
   }
 
