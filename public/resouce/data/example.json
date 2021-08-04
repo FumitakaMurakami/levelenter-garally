@@ -112,7 +112,7 @@
   {
     "number": 10,
     "name": "金剛力士像",
-    "path": "./resouce/rikishi.png",
+    "path": "./resouce/rikishi.PNG",
     "class": "arprogram",
     "url": "https://blockvrocks.com/levelenter-garally/contents/rikishi/AR.html",
     "day": "2021/08/02",
