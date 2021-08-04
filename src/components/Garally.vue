@@ -4,28 +4,7 @@
     <button @click="filterB" id="c-button">VRプログラム</button>
     <button @click="filterC" id="c-button">ARプログラム</button>
     <button @click="clearFilter" id="c-button">全表示</button> -->
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <button
-          class="btn btn-outline-secondary"
-          @click="onClick"
-          type="button"
-          id="button0addon1"
-        >
-          認証コード
-        </button>
-      </div>
-      <input
-        id="pass"
-        type="text"
-        class="form-control"
-        placeholder="パスコード入力"
-        aria-label="passcode"
-        aria-describedby="basic-addon1"
-        value="levelenter"
-        v-model="inputPassword"
-      />
-    </div>
+
     <div>
       <div class="fixed-top pt-5 px-5 d-none d-md-block">
         <b-button v-b-toggle.sidebar-right style="float: right"
@@ -59,6 +38,30 @@
               <b-button v-on:click="clearFilter" block variant="link,primary"
                 >全表示</b-button
               >
+            </li>
+            <li>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-outline-secondary"
+                    @click="onClick"
+                    type="button"
+                    id="button0addon1"
+                  >
+                    認証コード
+                  </button>
+                </div>
+                <input
+                  id="pass"
+                  type="text"
+                  class="form-control"
+                  placeholder="パスコード入力"
+                  aria-label="passcode"
+                  aria-describedby="basic-addon1"
+                  value="levelenter"
+                  v-model="inputPassword"
+                />
+              </div>
             </li>
           </ul>
         </div>
