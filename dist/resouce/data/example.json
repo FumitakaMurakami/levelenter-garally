@@ -112,12 +112,12 @@
   {
     "number": 10,
     "name": "金剛力士像",
-    "path": "./resouce/movescene.png",
-    "class": "vrprogram",
-    "url": "https://blockvrock.com/exec.html?user_id=429&project_id=174bed800cb293",
+    "path": "./resouce/rikishi.png",
+    "class": "arprogram",
+    "url": "https://blockvrocks.com/levelenter-garally/contents/rikishi/AR.html",
     "day": "2021/08/02",
     "producer": "Dai Yamamoto",
     "publishing": "private",
-    "Explanatory": "VR空間を移動しながら、様々な場面を解説付きで旅行できます。"
+    "Explanatory": "床面をトラッキングし、好きな場所に金剛力士像を設置、360度観察することができます。"
   }
 ]
