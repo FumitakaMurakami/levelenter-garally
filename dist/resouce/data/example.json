@@ -15,7 +15,7 @@
     "name": "VRオフィス",
     "path": "./resouce/3dmodel-1.png",
     "class": "3dmodel",
-    "url": "https://blockvrocks.com/levelenter-garally/contents/3d-office/index.html",
+    "url": "./contents/3d-office/index.html",
     "day": "2021/06/16",
     "producer": "Sayaka Nakagawa",
     "publishing": "public",
@@ -119,5 +119,16 @@
     "producer": "Dai Yamamoto",
     "publishing": "private",
     "Explanatory": "床面をトラッキングし、好きな場所に金剛力士像を設置、360度観察することができます。"
+  },
+  {
+    "number": 11,
+    "name": "AR3Dモデル",
+    "path": "./resouce/rikishi.PNG",
+    "class": "arprogram",
+    "url": "https://blockvrocks.com/levelenter-garally/contents/AR-simple/index.html",
+    "day": "2021/08/22",
+    "producer": "FUMITAKA MURAKAMI",
+    "publishing": "private",
+    "Explanatory": "AR上で３Dモデルを表示するサンプル。"
   }
 ]
