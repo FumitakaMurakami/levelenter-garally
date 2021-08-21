@@ -3,35 +3,36 @@
 https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
 
  -->
-
-<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<style>
-  .after-click {
-    text-align: center;
-    font-size: 1.25em;
-    color: transparent;
-  }
-  .arjs-loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .arjs-loader div {
-    text-align: center;
-    font-size: 1.25em;
-    color: white;
-  }
-</style>
-
+<head>
+  <meta http-equiv="content-type" charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  <style>
+    .after-click {
+      text-align: center;
+      font-size: 1.25em;
+      color: transparent;
+    }
+    .arjs-loader {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .arjs-loader div {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+    }
+  </style>
+</head>
 
 <body>
   <div class="arjs-loader">
@@ -43,14 +44,15 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
     embedded
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
   >
-  <a-assets>
-    <a-asset-item id="model" src="./3Dmodel/teat_Avatar.glb"></a-asset-item>
-  </a-assets>
-  <a-entity gltf-model="#model" position="0 0 1"></a-entity>
-    <a-entity camera><a-entity
-      cursor="rayOrigin: mouse; fuse:false"
-      material="color: black; shader: flat"
-    >
+    <a-assets>
+      <a-asset-item id="model" src="./3Dmodel/teat_Avatar.glb"></a-asset-item>
+    </a-assets>
+    <a-entity gltf-model="#model" position="0 0 1"></a-entity>
+    <a-entity camera
+      ><a-entity
+        cursor="rayOrigin: mouse; fuse:false"
+        material="color: black; shader: flat"
+      ></a-entity>
     </a-entity>
   </a-scene>
 </body>
