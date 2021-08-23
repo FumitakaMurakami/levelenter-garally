@@ -15,16 +15,32 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
     embedded
-    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+    arjs="sourceType: webcam; matrixCodeType: 3x3;detectionMode:mono_and_matrix; debugUIEnabled: false;"
   >
     <a-entity
       gltf-model="./3Dmodel/teat_Avatar.glb"
       position="0 -2 -5"
       scale="1 1 1"
     ></a-entity>
-    <a-entity camera
-      ><a-entity cursor="rayOrigin: mouse; fuse:false"></a-entity>
-    </a-entity>
+    <a-entity
+      camera=""
+      position=""
+      wasd-controls=""
+      rotation=""
+      look-controls=""
+      aframe-injected=""
+    ></a-entity>
+    <a-entity
+      light=""
+      position=""
+      data-aframe-default-light=""
+      aframe-injected=""
+    ></a-entity>
+    <a-entity
+      light=""
+      data-aframe-default-light=""
+      aframe-injected=""
+    ></a-entity>
   </a-scene>
 </body>
 
