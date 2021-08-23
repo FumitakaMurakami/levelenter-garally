@@ -17,10 +17,11 @@ https://aframe.io/docs/1.2.0/introduction/writing-a-component.html
     embedded
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
   >
-    <a-assets>
-      <a-asset-item id="model" src="./3Dmodel/teat_Avatar.glb"></a-asset-item>
-    </a-assets>
-    <a-entity gltf-model="#model" position="0 0 -1"></a-entity>
+    <a-entity
+      gltf-model="./3Dmodel/teat_Avatar.glb"
+      position="0 -2 -5"
+      scale="1 1 1"
+    ></a-entity>
     <a-entity camera
       ><a-entity cursor="rayOrigin: mouse; fuse:false"></a-entity>
     </a-entity>
