@@ -74,8 +74,8 @@ function geoSetup() {
   const success = (position) => {
     const { latitude, longitude } = position.coords;
 
-    const randomlatitude = getRandomArbitrary(0.0001, 0.0005);
-    const randomlongitude = getRandomArbitrary(0.0001, 0.0005);
+    const randomlatitude = getRandomArbitrary(0.0003, 0.0005);
+    const randomlongitude = getRandomArbitrary(0.0003, 0.0005);
 
     let treasurelatitude = latitude + randomlatitude;
     let treasurelongitude = longitude + randomlongitude;
