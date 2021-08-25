@@ -74,10 +74,10 @@ function geoSetup() {
   const success = (position) => {
     const { latitude, longitude } = position.coords;
 
-    const randomlatitude = getRandomArbitrary(0.0005, 0.001);
-    const randomlongitude = getRandomArbitrary(0.0005, 0.001);
+    const randomlatitude = getRandomArbitrary(0.0008, 0.001);
+    const randomlongitude = getRandomArbitrary(0.0008, 0.001);
 
-    let treasurelatitude = latitude + randomlongitude;
+    let treasurelatitude = latitude + randomlatitude;
     let treasurelongitude = longitude + randomlongitude;
     /* treasure.setAttribute(
       "gps-entity-place",
