@@ -137,7 +137,7 @@
     "path": "./resouce/rikishi.PNG",
     "class": "arprogram",
     "url": "./contents/ar-customMarker/AR.html",
-    "day": "2021/08/22",
+    "day": "2021/09/11",
     "producer": "FUMITAKA MURAKAMI",
     "publishing": "public",
     "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプル。"
