@@ -130,5 +130,16 @@
     "producer": "FUMITAKA MURAKAMI",
     "publishing": "private",
     "Explanatory": "AR上で３Dモデルを表示するサンプル。"
+  },
+  {
+    "number": 12,
+    "name": "ARカスタムマーカー",
+    "path": "./resouce/rikishi.PNG",
+    "class": "arprogram",
+    "url": "./contents/ar-customMarker/AR.html",
+    "day": "2021/08/22",
+    "producer": "FUMITAKA MURAKAMI",
+    "publishing": "public",
+    "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプル。"
   }
 ]

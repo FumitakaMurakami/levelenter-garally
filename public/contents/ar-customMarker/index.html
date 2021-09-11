@@ -1,0 +1,157 @@
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  <script>
+    AFRAME.registerComponent("registerevents", {
+      init: function() {
+        let marker = this.el;
+        const playmv = function() {
+          const v = document.querySelector("#mv");
+          v.play();
+        };
+        const stopmv = function() {
+          const v = document.querySelector("#mv");
+          v.pause();
+        };
+        // マーカーを検出したイベントの登録
+        marker.addEventListener("markerFound", function() {
+          playmv();
+          const b1 = document.getElementById("button1");
+          b1.classList.remove("buttons");
+          b1.classList.toggle("load-buttons");
+        });
+
+        // マーカーを見失ったイベントの登録
+        marker.addEventListener("markerLost", function() {
+          stopmv();
+          const b1 = document.getElementById("button1");
+          b1.classList.remove("after-buttons");
+          b1.classList.toggle("load-buttons");
+        });
+      },
+    });
+    function buttonevent() {
+      const v = document.querySelector("#mv");
+      /* v.setAttribute("material", "src", "#music_on"); */
+      v.muted = true; // ミュート有効
+      v.play(); // 動画再生
+      v.muted = false; // ミュート無効
+      v.currentTime = 0; // 開始秒数を戻す
+    }
+  </script>
+  <style>
+    .buttons {
+      color: white;
+      position: absolute;
+      height: 80px;
+      width: 120px;
+      z-index: -9999;
+      bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+    }
+    .load-buttons {
+      color: white;
+      position: absolute;
+      height: 80px;
+      width: 120px;
+      z-index: 9999;
+      bottom: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+    }
+  </style>
+  <body style="margin: 0px; overflow: hidden">
+    <div class="loader" id="info">
+      <button
+        class="buttons"
+        type="button"
+        id="button1"
+        onclick="buttonevent()"
+      >
+        ミュート解除
+      </button>
+    </div>
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+    >
+      <a-assets>
+        <video
+          id="mv"
+          autoplay
+          muted="false"
+          loop="true"
+          src="video/sample.mp4"
+        ></video>
+      </a-assets>
+      <!-- <a-nft
+      type="nft"
+      url="https://fumitakamurakami.github.io/book-ar/hasbrelo"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+      registerevents
+    >
+      <a-video
+        src="#mv"
+        width="300"
+        height="200"
+        position="0 0 0"
+        rotation="-90 0 0"
+        webkit-playsinline
+        playsinline
+        loop="true"
+      ></a-video>
+    </a-nft>
+    <a-nft
+      type="nft"
+      url="https://fumitakamurakami.github.io/book-ar/BVbook"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+      registerevents
+    >
+      <a-video
+        src="#mv"
+        width="300"
+        height="200"
+        position="0 0 0"
+        rotation="-90 0 0"
+        webkit-playsinline
+        playsinline
+        loop="true"
+      ></a-video>
+    </a-nft> -->
+      <a-marker preset="hiro" registerevents>
+        <a-video
+          src="#mv"
+          scale="1 1 1"
+          position="0 0 -2"
+          rotation="0 180 180"
+          webkit-playsinline
+          playsinline
+          loop="true"
+        ></a-video>
+      </a-marker>
+      <a-entity camera
+        ><a-entity
+          cursor="rayOrigin: mouse; fuse:false"
+          material="color: black; shader: flat"
+        ></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
