@@ -1,20 +1,24 @@
 <template>
   <div>
-    <header>
+    <header class="mx-1 py-1 ">
       <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
-      <div class="py-5 px-5 d-flex align-items-center d-none d-md-flex">
-        <h1><a href="https://blockvrock.com/"> Level Enter inc.</a></h1>
-        <p class="h-100 mx-5 pt-2 ">
-          VR AR ギャラリー
-        </p>
-        <div>
-          <img
-            src="../assets/samplepage.png"
-            alt="logo-footer"
-            data-at2x="assets/img/logo.png"
-            style="width:130px; height:130px; object-fit:cover;"
-          />
-        </div>
+      <div class="pt-5 d-flex align-items-center d-none d-md-flex ">
+        <h1>
+          <a href="https://blockvrock.com/"> Level Enter inc.</a>
+        </h1>
+      </div>
+      <p class="boader px-5 text-left d-none d-md-flex">...</p>
+      <p class="sub d-none d-md-flex">
+        VR / AR Gallery
+      </p>
+      <div>
+        <img
+          class="d-flex align-items-center d-none d-md-flex"
+          src="../assets/samplepage.png"
+          alt="logo-footer"
+          data-at2x="assets/img/logo.png"
+          style="width:120px; height:120px; object-fit:cover;"
+        />
       </div>
       <div class="py-5 px-5 align-items-center d-block d-md-none">
         <h1><a href="https://blockvrock.com/"> Level Enter inc.</a></h1>
@@ -47,13 +51,30 @@
   padding: 30px 0 10px 10px;
   display: inline-block;
 } */
+header {
+  background-color: #1b252c;
+}
 a {
-  color: #3a302d;
+  color: #bf88fd;
   text-decoration: none;
   /* font-family: canada-type-gibson, "游ゴシック Medium", "Yu Gothic Medium",
     "游ゴシック体", YuGothic, "ヒラギノ角ゴシック Pro",
     "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック",
     "MS PGothic", sans-serif; */
+}
+h1 {
+  color: #bf88fd;
+}
+.boader {
+  height: 1px;
+  width: 94%;
+  color: transparent;
+  background: linear-gradient(-135deg, #5aff29, #ebff00);
+}
+.sub {
+  font-size: 18px;
+  color: #9dafbd;
+  height: 10%;
 }
 /*p {
   margin: 3px 0 0 20px !important;
