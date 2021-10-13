@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="mx-1 py-1 ">
+    <header class="mx-1 py-1  d-none d-md-block">
       <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
       <div class="pt-5 d-flex align-items-center d-none d-md-flex ">
         <h1>
@@ -20,10 +20,22 @@
           style="width:120px; height:120px; object-fit:cover;"
         />
       </div>
-      <div class="py-5 px-5 align-items-center d-block d-md-none">
+      <!-- <p class="company">
+        <img
+          id="logo"
+          class="rounded-circle r-10rem"
+          src="./img/LEicon.png"
+          alt=""
+        />
+      </p> -->
+    </header>
+    <header class="d-block d-md-none">
+      <!-- <img id="logo" src="./img/logo.png" alt="" /> -->
+      <div class="pt-5 align-items-center d-block d-md-none">
         <h1><a href="https://blockvrock.com/"> Level Enter inc.</a></h1>
-        <p class="h-100 pt-2">
-          VR AR ギャラリー
+        <p class="boader-s px-5 text-left ">...</p>
+        <p class="sub">
+          VR / AR Gallery
         </p>
       </div>
       <!-- <p class="company">
@@ -71,8 +83,14 @@ h1 {
   color: transparent;
   background: linear-gradient(-135deg, #5aff29, #ebff00);
 }
+.boader-s {
+  height: 2px;
+  width: 100%;
+  color: transparent;
+  background: linear-gradient(-135deg, #5aff29, #ebff00);
+}
 .sub {
-  font-size: 18px;
+  font-size: 13px;
   color: #9dafbd;
   height: 10%;
 }

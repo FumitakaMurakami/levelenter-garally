@@ -67,16 +67,15 @@
         </div>
       </b-sidebar>
     </div>
-
-    <div class="row">
+    <div class="row  mb-4">
       <div
         v-for="item of imagesModel"
         :key="item.name"
-        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-5"
+        class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-5 pb-5"
       >
         <div class="cards">
           <img
-            class="bd-placeholder-img card-img-top"
+            class="bd-placeholder-img card-img-top w-100"
             :src="item.path"
             :class="item.class"
             @click="linkpage(item.url)"
@@ -100,7 +99,7 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 import { ImagePath } from "../views/ImagePath";
 
 @Component({ components: {} })
-export default class Garally extends Vue {
+export default class SmallGarally extends Vue {
   private inputMessage = "";
   public filterKeyword = "";
   public filterKeyword2 = "";
@@ -224,30 +223,24 @@ img {
 }
 .cards {
   background-color: #1b252c;
-  width: 80%;
+  width: 100%;
 }
-.cards-s {
-  background-color: #1b252c;
-  width: 80%;
-}
+
 .card-title {
   color: #bf88fd;
+  font-size: 20px;
 }
 .card-info {
-  color: #9dafbd;
-  font-size: 13px;
-}
-.card-info-s {
   color: #9dafbd;
   font-size: 13px;
   text-align: right;
 }
 .card-text {
   color: #9dafbd;
-  font-size: 13px;
+  font-size: 18px;
 }
 .card-boader {
-  height: 1px;
+  height: 2px;
   width: 100%;
   color: transparent;
   background: linear-gradient(-135deg, #5aff29, #ebff00);
