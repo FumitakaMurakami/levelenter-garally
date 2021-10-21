@@ -45,17 +45,6 @@
     "Explanatory": "VR空間上で3Dオブジェクトに当たり判定を実装したVRプログラム。"
   },
   {
-    "number": 4,
-    "name": "VRミュージアム",
-    "path": "./resouce/museum.png",
-    "class": "vrprogram",
-    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=171f7dfc8fe196",
-    "day": "2021/06/16",
-    "producer": "Dai Yamamoto",
-    "publishing": "public",
-    "Explanatory": "複数ユーザーが同じVR空間に同時接続することのできるVR博物館。内部で音声通話も可能。"
-  },
-  {
     "number": 5,
     "name": "ARビデオ",
     "path": "./resouce/ar-video.PNG",
@@ -141,7 +130,7 @@
     "day": "2021/09/11",
     "producer": "Fumitaka Murakami",
     "publishing": "public",
-    "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプル。"
+    "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプルです。"
   },
   {
     "number": 12,
