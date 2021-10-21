@@ -13,18 +13,6 @@
 
   {
     "number": 1,
-    "name": "ミュージアム ",
-    "path": "https://blockvrock.com/assets/429/project/17ca1a7f3632e8.png",
-    "class": "vrprogram",
-    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=17ca1a7f3632e8",
-    "day": "2021/06/16",
-    "producer": "Dai Yamamoto",
-    "publishing": "public",
-    "Explanatory": "BLOCKVROCKを使ったミュージアムです。URLを共有することでVR空間中で会話することも可能です"
-  },
-
-  {
-    "number": 1,
     "name": "VRオフィス model",
     "path": "./resouce/3dmodel-1.png",
     "class": "3dmodel",
@@ -147,7 +135,7 @@
   {
     "number": 12,
     "name": "ARカスタムマーカー",
-    "path": "./resouce/rikishi.PNG",
+    "path": "./resouce/custom_marker.png",
     "class": "arprogram",
     "url": "./contents/ar-customMarker/AR.html",
     "day": "2021/09/11",
@@ -165,5 +153,16 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "オフラインでも利用可能なWeb ARアプリを作成するPWA(Progressive Web Application)形式のサンプルです。スマートフォンにインストール（iOSの場合はHome画面に追加）することができます。"
+  },
+  {
+    "number": 13,
+    "name": "ミュージアム ",
+    "path": "./resouce/museum_demo.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=17ca1a7f3632e8",
+    "day": "2021/10/21",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "BLOCKVROCKを使ったミュージアムです。URLを共有することでVR空間中で会話することも可能です"
   }
 ]

@@ -130,17 +130,21 @@ export default class Garally extends Vue {
   get imagesModel() {
     console.log(this.pass);
 
-    return this.images.filter(
-      (item) =>
-        (item.publishing === this.password2 && this.filterKeyword == "") ||
-        (item.publishing === this.password && this.filterKeyword == "") ||
-        (item.publishing === this.password &&
-          item.class !== this.filterKeyword &&
-          item.class !== this.filterKeyword2) ||
-        (item.publishing === this.password &&
-          item.class !== this.filterKeyword &&
-          item.class !== this.filterKeyword2)
-    );
+    return this.images
+      .sort((a, b) => {
+        return b.number - a.number;
+      })
+      .filter(
+        (item) =>
+          (item.publishing === this.password2 && this.filterKeyword == "") ||
+          (item.publishing === this.password && this.filterKeyword == "") ||
+          (item.publishing === this.password &&
+            item.class !== this.filterKeyword &&
+            item.class !== this.filterKeyword2) ||
+          (item.publishing === this.password &&
+            item.class !== this.filterKeyword &&
+            item.class !== this.filterKeyword2)
+      );
   }
   public onClick() {
     if (this._inputPassword == "levelenter") {
