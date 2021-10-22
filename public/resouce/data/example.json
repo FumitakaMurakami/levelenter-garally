@@ -144,7 +144,7 @@
     "Explanatory": "オフラインでも利用可能なWeb ARアプリを作成するPWA(Progressive Web Application)形式のサンプルです。スマートフォンにインストール（iOSの場合はHome画面に追加）することができます。"
   },
   {
-    "number": 13,
+    "number": 14,
     "name": "ミュージアム ",
     "path": "./resouce/museum_demo.png",
     "class": "vrprogram",
@@ -153,5 +153,16 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "BLOCKVROCKを使ったミュージアムです。URLを共有することでVR空間中で会話することも可能です"
+  },
+  {
+    "number": 13,
+    "name": "GPSによる位置情報AR",
+    "path": "./resouce/geo_ar.png",
+    "class": "vrprogram",
+    "url": "https://blockvrocks.com/geoar/",
+    "day": "2021/10/22",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "地図で指定した位置に物体を配置して、スマホARで見られるようにします"
   }
 ]
