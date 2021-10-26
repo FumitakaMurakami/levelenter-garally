@@ -1,9 +1,9 @@
 <template>
-  <div class="gbody">
-    <main class="container px-5 d-none d-md-block">
-      <header class="mb-5 pb-5" id="head">
-        <Tab />
-      </header>
+  <div>
+    <header id="head">
+      <Tab />
+    </header>
+    <main class="container">
       <!-- <SideBar
       :images="imageList"
       @deleteItem="deleteItem"
@@ -11,7 +11,7 @@
       style="float: right"
       /> -->
 
-      <Gallery :images="imageList" @deleteItem="deleteItem" id="Gallery" />
+      <Garally :images="imageList" @deleteItem="deleteItem" id="Garally" />
 
       <!-- <MessageInOut
       :images="imageList"
@@ -20,52 +20,31 @@
       /> -->
       <!-- <p v-html="htmlTest"></p> -->
     </main>
-    <main class="container d-block d-md-none px-4">
-      <header id="head">
-        <Tab />
-      </header>
-      <!-- <SideBar
-      :images="imageList"
-      @deleteItem="deleteItem"
-      class="sidebar"
-      style="float: right"
-      /> -->
-
-      <SmallGallery :images="imageList" @deleteItem="deleteItem" id="Gallery" />
-
-      <!-- <MessageInOut
-      :images="imageList"
-      :porpInput="hello2"
-      @deleteItem="deleteItem"
-      /> -->
-      <!-- <p v-html="htmlTest"></p> -->
-    </main>
-
-    <Footer />
+    <footer>
+      <Hooter />
+    </footer>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src]
-import Gallery from "@/components/Gallery.vue";
-import SmallGallery from "@/components/SmallGallery.vue";
+import Garally from "@/components/Garally.vue";
 import MessageInOut from "../components/MessageInOut.vue";
 import { ImagePath } from "./ImagePath";
 import { component } from "node_modules/vue/types/umd";
 import SideBar from "@/components/SideBar.vue";
 import Tab from "@/components/Tab.vue";
-import Footer from "@/components/Footer.vue";
+import Hooter from "@/components/Footer.vue";
 import VueHead from "vue-head";
 
 @Component({
   components: {
     MessageInOut,
-    Gallery,
+    Garally,
     SideBar,
     Tab,
-    Footer,
-    SmallGallery,
+    Hooter,
   },
 })
 export default class Home extends Vue {
@@ -127,8 +106,4 @@ export default class Home extends Vue {
 /* #Garally {
   background-color: #fafafa;
 } */
-
-.gbody {
-  background-color: #1b252c;
-}
 </style>

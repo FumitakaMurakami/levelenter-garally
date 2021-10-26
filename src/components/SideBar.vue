@@ -26,6 +26,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 import { ImagePath } from "../views/ImagePath";
+import Garally from "@components/Garally.vue";
 import Config from "../../config.d";
 Vue.prototype.$filterKeyword = "";
 @Component({ components: {} })
