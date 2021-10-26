@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "number": 0,
@@ -143,3 +144,173 @@
     "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプル。"
   }
 ]
+=======
+[
+  {
+    "number": 0,
+    "name": "VR音声認識プログラム",
+    "path": "./resouce/VRsample.png",
+    "class": "vrprogram",
+    "url": "./contents/Speech-to-text/index.html",
+    "day": "2021/06/16",
+    "producer": "Fumitaka Murakami",
+    "publishing": "private",
+    "Explanatory": "Google提供のAPI、Speech to Textを使った音声認識VRプログラム。"
+  },
+
+  {
+    "number": 1,
+    "name": "VRオフィス model",
+    "path": "./resouce/3dmodel-1.png",
+    "class": "3dmodel",
+    "url": "./contents/3d-office/index.html",
+    "day": "2021/06/16",
+    "producer": "Sayaka Nakagawa",
+    "publishing": "public",
+    "Explanatory": "仮想空間上にオフィスを3Dモデルを配置したVRオフィス。"
+  },
+  {
+    "number": 2,
+    "name": "1000札両替AR",
+    "path": "./resouce/1000en.PNG",
+    "class": "arprogram",
+    "url": "./contents/1000en-coinAR/AR.html",
+    "day": "2021/06/16",
+    "producer": "Fumitaka Murakami",
+    "publishing": "public",
+    "Explanatory": "1000円札をマーカーとした、ARプログラム。1000円札を写すことで1000円分の100円玉3Dモデルが表示されます。"
+  },
+  {
+    "number": 3,
+    "name": "当たり判定つき3Dモデル",
+    "path": "./resouce/raycaster.png",
+    "class": "3dmodel",
+    "url": "./contents/raycaster-sample/index.html",
+    "day": "2021/05/05",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "VR空間上で3Dオブジェクトに当たり判定を実装したVRプログラム。"
+  },
+  {
+    "number": 5,
+    "name": "ARビデオ",
+    "path": "./resouce/ar-video.PNG",
+    "class": "arprogram",
+    "url": "./contents/ar-video/AR.html",
+    "day": "2021/07/01",
+    "producer": "Fumitaka Murakami",
+    "publishing": "public",
+    "Explanatory": "AR空間上での動画再生サンプル。マーカーを読み込むと動画が再生され、ミュート解除ボタンを押すことで音声も流れます。"
+  },
+  {
+    "number": 6,
+    "name": "VRビデオ",
+    "path": "./resouce/vr-video.png",
+    "class": "vrprogram",
+    "url": "./contents/vr-video/index.html",
+    "day": "2021/07/01",
+    "producer": "Fumitaka Murakami",
+    "publishing": "public",
+    "Explanatory": "VR空間上での動画再生サンプル。自動再生、クリックによる再生イベントの制御、ミュート解除など実装"
+  },
+  {
+    "number": 7,
+    "name": "宝探しAR",
+    "path": "./resouce/treasure.PNG",
+    "class": "arprogram",
+    "url": "./contents/treasure/AR.html",
+    "day": "2021/07/01",
+    "producer": "Fumitaka Murakami",
+    "publishing": "public",
+    "Explanatory": "AR位置情報サービスLocation baseを使った宝探しゲーム。GPS情報を取得し、ランダムに配置される3Dモデルを探索します。"
+  },
+  {
+    "number": 8,
+    "name": "マーカーレス床面検知AR",
+    "path": "./resouce/modelviewer.png",
+    "class": "3dmodel",
+    "url": "https://blockvrocks.com/examples/model-viewer/",
+    "day": "2021/07/01",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "Googleの提供する3Dモデル表示API、model-viewerのサンプル。"
+  },
+  {
+    "number": 9,
+    "name": "空間移動VRギャラリー",
+    "path": "./resouce/movescene.png",
+    "class": "vrprogram",
+    "url": "https://blockvrock.com/exec.html?user_id=429&project_id=174bed800cb293",
+    "day": "2021/08/02",
+    "producer": "Dai Yamamoto",
+    "publishing": "private",
+    "Explanatory": "VR空間を移動しながら、様々な場面を解説付きで旅行できます。（デジタルハリウッド大学、コンテスト出品作品）"
+  },
+  {
+    "number": 10,
+    "name": "金剛力士像",
+    "path": "./resouce/rikishi.PNG",
+    "class": "arprogram",
+    "url": "./contents/rikishi/AR.html",
+    "day": "2021/08/02",
+    "producer": "Dai Yamamoto",
+    "publishing": "private",
+    "Explanatory": "床面をトラッキングし、好きな場所に金剛力士像を設置、360度観察することができます。"
+  },
+  {
+    "number": 11,
+    "name": "AR3Dモデル",
+    "path": "./resouce/rikishi.PNG",
+    "class": "arprogram",
+    "url": "./contents/AR-simple/index.html",
+    "day": "2021/08/22",
+    "producer": "Fumitaka Murakami",
+    "publishing": "private",
+    "Explanatory": "AR上で３Dモデルを表示するサンプル。"
+  },
+  {
+    "number": 12,
+    "name": "ARカスタムマーカー",
+    "path": "./resouce/custom_marker.png",
+    "class": "arprogram",
+    "url": "./contents/ar-customMarker/AR.html",
+    "day": "2021/09/11",
+    "producer": "Fumitaka Murakami",
+    "publishing": "public",
+    "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプルです。"
+  },
+  {
+    "number": 12,
+    "name": "オフラインWebARアプリ",
+    "path": "./resouce/pwa_image.png",
+    "class": "arprogram",
+    "url": "https://blockvrocks.com/pwa_example/",
+    "day": "2021/10/21",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "オフラインでも利用可能なWeb ARアプリを作成するPWA(Progressive Web Application)形式のサンプルです。スマートフォンにインストール（iOSの場合はHome画面に追加）することができます。"
+  },
+  {
+    "number": 14,
+    "name": "ミュージアム ",
+    "path": "./resouce/museum_demo.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=17ca1a7f3632e8",
+    "day": "2021/10/21",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "BLOCKVROCKを使ったミュージアムです。URLを共有することでVR空間中で会話することも可能です"
+  },
+  {
+    "number": 13,
+    "name": "GPSによる位置情報AR",
+    "path": "./resouce/geo_ar.png",
+    "class": "vrprogram",
+    "url": "https://blockvrocks.com/geoar/",
+    "day": "2021/10/22",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "地図で指定した位置に物体を配置して、スマホARで見られるようにします"
+  }
+]
+>>>>>>> f25d7a0cf85d1453cf9d924fc583665b10d21bcd
