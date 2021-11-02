@@ -10,9 +10,10 @@
     "publishing": "private",
     "Explanatory": "Google提供のAPI、Speech to Textを使った音声認識VRプログラム。"
   },
+
   {
     "number": 1,
-    "name": "VRオフィス",
+    "name": "VRオフィス model",
     "path": "./resouce/3dmodel-1.png",
     "class": "3dmodel",
     "url": "./contents/3d-office/index.html",
@@ -42,17 +43,6 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "VR空間上で3Dオブジェクトに当たり判定を実装したVRプログラム。"
-  },
-  {
-    "number": 4,
-    "name": "VRミュージアム",
-    "path": "./resouce/museum.png",
-    "class": "vrprogram",
-    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=171f7dfc8fe196",
-    "day": "2021/06/16",
-    "producer": "Dai Yamamoto",
-    "publishing": "public",
-    "Explanatory": "複数ユーザーが同じVR空間に同時接続することのできるVR博物館。内部で音声通話も可能。"
   },
   {
     "number": 5,
@@ -127,19 +117,52 @@
     "class": "arprogram",
     "url": "./contents/AR-simple/index.html",
     "day": "2021/08/22",
-    "producer": "FUMITAKA MURAKAMI",
+    "producer": "Fumitaka Murakami",
     "publishing": "private",
     "Explanatory": "AR上で３Dモデルを表示するサンプル。"
   },
   {
     "number": 12,
     "name": "ARカスタムマーカー",
-    "path": "./resouce/rikishi.PNG",
+    "path": "./resouce/custom_marker.png",
     "class": "arprogram",
     "url": "./contents/ar-customMarker/AR.html",
     "day": "2021/09/11",
-    "producer": "FUMITAKA MURAKAMI",
+    "producer": "Fumitaka Murakami",
     "publishing": "public",
-    "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプル。"
+    "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプルです。"
+  },
+  {
+    "number": 12,
+    "name": "オフラインWebARアプリ",
+    "path": "./resouce/pwa_image.png",
+    "class": "arprogram",
+    "url": "https://blockvrocks.com/pwa_example/",
+    "day": "2021/10/21",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "オフラインでも利用可能なWeb ARアプリを作成するPWA(Progressive Web Application)形式のサンプルです。スマートフォンにインストール（iOSの場合はHome画面に追加）することができます。"
+  },
+  {
+    "number": 14,
+    "name": "ミュージアム ",
+    "path": "./resouce/museum_demo.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=17ca1a7f3632e8",
+    "day": "2021/10/21",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "BLOCKVROCKを使ったミュージアムです。URLを共有することでVR空間中で会話することも可能です"
+  },
+  {
+    "number": 13,
+    "name": "GPSによる位置情報AR",
+    "path": "./resouce/geo_ar.png",
+    "class": "vrprogram",
+    "url": "https://blockvrocks.com/geoar/",
+    "day": "2021/10/22",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "地図で指定した位置に物体を配置して、スマホARで見られるようにします"
   }
 ]

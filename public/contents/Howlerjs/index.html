@@ -1,0 +1,130 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Aframe video example</title>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera>
+        <a-entity
+          cursor="rayOrigin: mouse; fuse:false"
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: black; shader: flat"
+        >
+        </a-entity>
+      </a-camera>
+      <a-sky src="#backgroundimg"></a-sky>
+      <a-assets>
+        <img id="backgroundimg" src="img/museum.jpg" />
+        <video
+          id="astronaut"
+          autoplay
+          muted="false"
+          loop="true"
+          src="video/Astronaut.mp4"
+        ></video>
+        <video
+          id="sea"
+          autoplay
+          muted="false"
+          loop="true"
+          src="video/Sea.mp4"
+        ></video>
+        <video
+          id="waterfall"
+          autoplay
+          muted="false"
+          loop="true"
+          src="video/Waterfall.mp4"
+        ></video>
+        <video
+          id="cat"
+          autoplay
+          muted="false"
+          loop="true"
+          src="video/Cat.mp4"
+        ></video>
+      </a-assets>
+      <a-text
+        scale="5 5 10"
+        id="text-box"
+        position="-2.5 5 -10"
+        value="自動再生"
+        font="noto-sans-cjk-jp-msdf.json"
+        font-image="noto-sans-cjk-jp-msdf.png"
+        color="black"
+      >
+      </a-text>
+      <a-video
+        src="#astronaut"
+        width="10"
+        height="7"
+        position="0 0 -10"
+        rotation="0 0 0"
+        webkit-playsinline
+        playsinline
+        autoplay
+      >
+      </a-video>
+      <a-text
+        scale="5 5 10"
+        id="text-box"
+        position="7 5 -10"
+        value="   ブロッククリック再生
+      青いブロックをクリックしてください"
+        font="noto-sans-cjk-jp-msdf.json"
+        font-image="noto-sans-cjk-jp-msdf.png"
+        rotation="0 -15 0"
+        color="black"
+      >
+      </a-text>
+      <a-box
+        position="15 -3 -4"
+        color="blue"
+        rotation="0 -15 0"
+        scale="2 2 2"
+        clickplay
+      ></a-box>
+      <a-video
+        src="#sea"
+        width="10"
+        height="7"
+        position="13 0 -9"
+        rotation="0 -15 0"
+        webkit-playsinline
+        playsinline
+        clickplay
+      >
+      </a-video>
+      <a-text
+        scale="5 5 10"
+        id="text-box"
+        position="-20 7 -8"
+        value="   音声再生　
+        注意:音が出ます
+        画面をクリックで再生"
+        font="noto-sans-cjk-jp-msdf.json"
+        font-image="noto-sans-cjk-jp-msdf.png"
+        rotation="0 15 0"
+        color="black"
+      >
+      </a-text>
+      <a-video
+        src="#waterfall"
+        width="10"
+        height="7"
+        position="-13 0 -9"
+        rotation="0 15 0"
+        webkit-playsinline
+        playsinline
+        muteplay
+      >
+      </a-video>
+    </a-scene>
+  </body>
+</html>
