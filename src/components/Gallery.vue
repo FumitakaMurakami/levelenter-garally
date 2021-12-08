@@ -87,7 +87,7 @@
           </p>
           <h5 class="card-title">{{ item.name }}</h5>
           <p class="card-boader">...</p>
-          <p class="card-text  " style="font-size=13px" id="itemdata">
+          <p class="card-text" style="font-size=13px" id="itemdata">
             {{ item.Explanatory }}
           </p>
         </div>
@@ -130,17 +130,21 @@ export default class Gallery extends Vue {
   get imagesModel() {
     console.log(this.pass);
 
-    return this.images.filter(
-      (item) =>
-        (item.publishing === this.password2 && this.filterKeyword == "") ||
-        (item.publishing === this.password && this.filterKeyword == "") ||
-        (item.publishing === this.password &&
-          item.class !== this.filterKeyword &&
-          item.class !== this.filterKeyword2) ||
-        (item.publishing === this.password &&
-          item.class !== this.filterKeyword &&
-          item.class !== this.filterKeyword2)
-    );
+    return this.images
+      .filter(
+        (item) =>
+          (item.publishing === this.password2 && this.filterKeyword == "") ||
+          (item.publishing === this.password && this.filterKeyword == "") ||
+          (item.publishing === this.password &&
+            item.class !== this.filterKeyword &&
+            item.class !== this.filterKeyword2) ||
+          (item.publishing === this.password &&
+            item.class !== this.filterKeyword &&
+            item.class !== this.filterKeyword2)
+      )
+      .sort((a, b) => {
+        return b.number - a.number;
+      });
   }
   public onClick() {
     if (this._inputPassword == "levelenter") {

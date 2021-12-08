@@ -164,5 +164,39 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "地図で指定した位置に物体を配置して、スマホARで見られるようにします"
+  },
+  {
+    "number": 14,
+    "name": "ARマーカーチェッカー",
+    "path": "./resouce/ar_marker_checker.png",
+    "class": "arprogram",
+    "url": "https://blockvrocks.com/ar_marker_checker/",
+    "day": "2021/12/08",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "オリジナルARマーカーを作成した際に、認識精度をチェックすることができます。"
+  },
+  {
+    "number": 15,
+    "name": "glbモデルARビューア",
+    "path": "./resouce/model_uploader.png",
+    "class": "arprogram",
+    "url": "https://blockvrocks.com/model_uploader/",
+    "day": "2021/12/08",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "glbファイルをアップロードして、マーカーARや平面検知ARでの見え方を確認することができるビューアです"
+  },
+
+  {
+    "number": 16,
+    "name": "街モデルの俯瞰とインフォメーション",
+    "path": "./resouce/orbit_city.png",
+    "class": "vrprogram",
+    "url": "https://blockvrocks.com/orbit_city/",
+    "day": "2021/12/08",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "街や屋外の３Dモデルを俯瞰して、ポイント毎のマークにタップすることで情報表示します。"
   }
 ]
