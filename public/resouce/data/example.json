@@ -68,13 +68,13 @@
   },
   {
     "number": 7,
-    "name": "宝探しAR",
+    "name": "宝探しAR(プロトタイプ)",
     "path": "./resouce/treasure.PNG",
     "class": "arprogram",
     "url": "./contents/treasure/AR.html",
     "day": "2021/07/01",
     "producer": "Fumitaka Murakami",
-    "publishing": "public",
+    "publishing": "private",
     "Explanatory": "AR位置情報サービスLocation baseを使った宝探しゲーム。GPS情報を取得し、ランダムに配置される3Dモデルを探索します。"
   },
   {
@@ -140,7 +140,7 @@
     "url": "https://blockvrocks.com/pwa_example/",
     "day": "2021/10/21",
     "producer": "Dai Yamamoto",
-    "publishing": "public",
+    "publishing": "private",
     "Explanatory": "オフラインでも利用可能なWeb ARアプリを作成するPWA(Progressive Web Application)形式のサンプルです。スマートフォンにインストール（iOSの場合はHome画面に追加）することができます。"
   },
   {
@@ -162,7 +162,7 @@
     "url": "https://blockvrocks.com/geoar/",
     "day": "2021/10/22",
     "producer": "Dai Yamamoto",
-    "publishing": "public",
+    "publishing": "priavte",
     "Explanatory": "地図で指定した位置に物体を配置して、スマホARで見られるようにします"
   },
   {
@@ -173,7 +173,7 @@
     "url": "https://blockvrocks.com/ar_marker_checker/",
     "day": "2021/12/08",
     "producer": "Dai Yamamoto",
-    "publishing": "public",
+    "publishing": "private",
     "Explanatory": "オリジナルARマーカーを作成した際に、認識精度をチェックすることができます。"
   },
   {
@@ -184,10 +184,9 @@
     "url": "https://blockvrocks.com/model_uploader/",
     "day": "2021/12/08",
     "producer": "Dai Yamamoto",
-    "publishing": "public",
+    "publishing": "private",
     "Explanatory": "glbファイルをアップロードして、マーカーARや平面検知ARでの見え方を確認することができるビューアです"
   },
-
   {
     "number": 16,
     "name": "街モデルの俯瞰とインフォメーション",
@@ -198,5 +197,115 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "街や屋外の３Dモデルを俯瞰して、ポイント毎のマークにタップすることで情報表示します。"
+  },
+  {
+    "number": 17,
+    "name": "リンクARマーカー",
+    "path": "./resouce/zelda.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=18406486295394",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "ゼルダの伝説のキャラクター、リンクの３DモデルをARで表示します。"
+  },
+  {
+    "number": 18,
+    "name": "ロボットAR（平面検知）",
+    "path": "./resouce/robot.png",
+    "class": "vrprogram",
+    "url": "https://demo.blockvrock.com/robot_ar/index.html",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "ロボットの３DモデルをAR、VRでプレビューします。ARでは平面を検知し、その場にモデルを配置することができます。"
+  },
+  {
+    "number": 19,
+    "name": "地球儀（マーカーレスAR）",
+    "path": "./resouce/earth.jpg",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=16f7dec0e58c0",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "地球儀の３DモデルをAR、VRでプレビューします。この３DモデルはAR上でマーカーレスで表示することができます。"
+  },
+  {
+    "number": 20,
+    "name": "壁を壊せ！VRゲーム",
+    "path": "./resouce/wall_break.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=1840872a965227",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "物理エンジンを使ったVRゲームです。無数に散らばった球体を飛ばして、壁を壊しましょう。"
+  },
+  {
+    "number": 21,
+    "name": "ジェンガ",
+    "path": "./resouce/jenga.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=18408701ef1236",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "VR上でプレイするジェンガゲームです。"
+  },
+  {
+    "number": 22,
+    "name": "VR4択クイズ",
+    "path": "./resouce/four_choice_quiz.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=18408687cb61bc",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "VRの4択クイズです。4つのブロック中に1つだけある正解を見つけて３Dモデルを探し出しましょう。"
+  },
+  {
+    "number": 22,
+    "name": "ワープボタン",
+    "path": "./resouce/warp_button.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=171011c1960218",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "360°全天球画像の風景を旅行できるVRです。ボタンを押すことで、風景をワープすることができます。"
+  },
+  {
+    "number": 23,
+    "name": "カラフル",
+    "path": "./resouce/colorful.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=16eafd489312a8",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "カラフルな直方体が無数に配置されたVRです。ループとランダムプログラムのサンプルになります。"
+  },
+  {
+    "number": 24,
+    "name": "ボックス",
+    "path": "./resouce/box_fly.png",
+    "class": "vrprogram",
+    "url": "https://run.blockvrock.com/show_user_contents?user_id=429&project_id=18408914471136",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "ボックスの配置されたVRです。ボックスは物理エンジンが付与されており、クリックでぶっ飛ばすことができます。"
+  },
+  {
+    "number": 25,
+    "name": "AR宝探し",
+    "path": "./resouce/AR_treasure.jpg",
+    "class": "vrprogram",
+    "url": "https://demo.blockvrock.com/botafes/pages/treasure/",
+    "day": "2022/12/09",
+    "producer": "Dai Yamamoto",
+    "publishing": "public",
+    "Explanatory": "スマホGPSを使った位置情報ARの宝探しです。宝箱の場所や数は任意に設定できます。"
   }
 ]
