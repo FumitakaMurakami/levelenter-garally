@@ -307,5 +307,16 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "スマホGPSを使った位置情報ARの宝探しです。宝箱の場所や数は任意に設定できます。"
+  },
+  {
+    "number": 26,
+    "name": "VR音声認識",
+    "path": "./resouce/VR-Voice-Text.png",
+    "class": "vrprogram",
+    "url": "https://demo.blockvrock.com/VR-Voice-Text/",
+    "day": "2022/12/19",
+    "producer": "FUMITAKA MURAKAMI",
+    "publishing": "public",
+    "Explanatory": "VR上で音声人気を行い、認識した内容を３Dオブジェクトで表示します。"
   }
 ]
