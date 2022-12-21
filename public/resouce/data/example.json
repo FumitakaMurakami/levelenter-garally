@@ -10,9 +10,19 @@
     "publishing": "private",
     "Explanatory": "Google提供のAPI、Speech to Textを使った音声認識VRプログラム。"
   },
-
   {
     "number": 1,
+    "name": "VR音声認識",
+    "path": "./resouce/VR-Voice-Text.png",
+    "class": "vrprogram",
+    "url": "https://demo.blockvrock.com/VR-Voice-Text/",
+    "day": "2022/12/19",
+    "producer": "FUMITAKA MURAKAMI",
+    "publishing": "public",
+    "Explanatory": "VR上で音声人気を行い、認識した内容を３Dオブジェクトで表示します。"
+  },
+  {
+    "number": 2,
     "name": "VRオフィス model",
     "path": "./resouce/3dmodel-1.png",
     "class": "3dmodel",
@@ -23,7 +33,7 @@
     "Explanatory": "仮想空間上にオフィスを3Dモデルを配置したVRオフィス。"
   },
   {
-    "number": 2,
+    "number": 3,
     "name": "1000札両替AR",
     "path": "./resouce/1000en.PNG",
     "class": "arprogram",
@@ -34,7 +44,7 @@
     "Explanatory": "1000円札をマーカーとした、ARプログラム。1000円札を写すことで1000円分の100円玉3Dモデルが表示されます。"
   },
   {
-    "number": 3,
+    "number": 4,
     "name": "当たり判定つき3Dモデル",
     "path": "./resouce/raycaster.png",
     "class": "3dmodel",
@@ -67,7 +77,7 @@
     "Explanatory": "VR空間上での動画再生サンプル。自動再生、クリックによる再生イベントの制御、ミュート解除など実装"
   },
   {
-    "number": 7,
+    "number": 8,
     "name": "宝探しAR(プロトタイプ)",
     "path": "./resouce/treasure.PNG",
     "class": "arprogram",
@@ -78,7 +88,7 @@
     "Explanatory": "AR位置情報サービスLocation baseを使った宝探しゲーム。GPS情報を取得し、ランダムに配置される3Dモデルを探索します。"
   },
   {
-    "number": 8,
+    "number": 9,
     "name": "マーカーレス床面検知AR",
     "path": "./resouce/modelviewer.png",
     "class": "3dmodel",
@@ -89,7 +99,7 @@
     "Explanatory": "Googleの提供する3Dモデル表示API、model-viewerのサンプル。"
   },
   {
-    "number": 9,
+    "number": 10,
     "name": "空間移動VRギャラリー",
     "path": "./resouce/movescene.png",
     "class": "vrprogram",
@@ -100,7 +110,7 @@
     "Explanatory": "VR空間を移動しながら、様々な場面を解説付きで旅行できます。（デジタルハリウッド大学、コンテスト出品作品）"
   },
   {
-    "number": 10,
+    "number": 11,
     "name": "金剛力士像",
     "path": "./resouce/rikishi.PNG",
     "class": "arprogram",
@@ -111,7 +121,7 @@
     "Explanatory": "床面をトラッキングし、好きな場所に金剛力士像を設置、360度観察することができます。"
   },
   {
-    "number": 11,
+    "number": 12,
     "name": "AR3Dモデル",
     "path": "./resouce/rikishi.PNG",
     "class": "arprogram",
@@ -122,7 +132,7 @@
     "Explanatory": "AR上で３Dモデルを表示するサンプル。"
   },
   {
-    "number": 12,
+    "number": 13,
     "name": "ARカスタムマーカー",
     "path": "./resouce/custom_marker.png",
     "class": "arprogram",
@@ -133,7 +143,7 @@
     "Explanatory": "独自のARマーカーを作成し、設定した3Dモデルを表示するサンプルです。"
   },
   {
-    "number": 12,
+    "number": 14,
     "name": "オフラインWebARアプリ",
     "path": "./resouce/pwa_image.png",
     "class": "arprogram",
@@ -144,7 +154,7 @@
     "Explanatory": "オフラインでも利用可能なWeb ARアプリを作成するPWA(Progressive Web Application)形式のサンプルです。スマートフォンにインストール（iOSの場合はHome画面に追加）することができます。"
   },
   {
-    "number": 14,
+    "number": 15,
     "name": "ミュージアム ",
     "path": "./resouce/museum_demo.png",
     "class": "vrprogram",
@@ -155,7 +165,7 @@
     "Explanatory": "BLOCKVROCKを使ったミュージアムです。URLを共有することでVR空間中で会話することも可能です"
   },
   {
-    "number": 13,
+    "number": 16,
     "name": "GPSによる位置情報AR",
     "path": "./resouce/geo_ar.png",
     "class": "vrprogram",
@@ -166,7 +176,7 @@
     "Explanatory": "地図で指定した位置に物体を配置して、スマホARで見られるようにします"
   },
   {
-    "number": 14,
+    "number": 17,
     "name": "ARマーカーチェッカー",
     "path": "./resouce/ar_marker_checker.png",
     "class": "arprogram",
@@ -177,7 +187,7 @@
     "Explanatory": "オリジナルARマーカーを作成した際に、認識精度をチェックすることができます。"
   },
   {
-    "number": 15,
+    "number": 18,
     "name": "glbモデルARビューア",
     "path": "./resouce/model_uploader.png",
     "class": "arprogram",
@@ -188,7 +198,7 @@
     "Explanatory": "glbファイルをアップロードして、マーカーARや平面検知ARでの見え方を確認することができるビューアです"
   },
   {
-    "number": 16,
+    "number": 19,
     "name": "街モデルの俯瞰とインフォメーション",
     "path": "./resouce/orbit_city.png",
     "class": "vrprogram",
@@ -199,7 +209,7 @@
     "Explanatory": "街や屋外の３Dモデルを俯瞰して、ポイント毎のマークにタップすることで情報表示します。"
   },
   {
-    "number": 17,
+    "number": 20,
     "name": "リンクARマーカー",
     "path": "./resouce/zelda.png",
     "class": "vrprogram",
@@ -210,7 +220,7 @@
     "Explanatory": "ゼルダの伝説のキャラクター、リンクの３DモデルをARで表示します。"
   },
   {
-    "number": 18,
+    "number": 21,
     "name": "ロボットAR（平面検知）",
     "path": "./resouce/robot.png",
     "class": "vrprogram",
@@ -221,7 +231,7 @@
     "Explanatory": "ロボットの３DモデルをAR、VRでプレビューします。ARでは平面を検知し、その場にモデルを配置することができます。"
   },
   {
-    "number": 19,
+    "number": 22,
     "name": "地球儀（マーカーレスAR）",
     "path": "./resouce/earth.jpg",
     "class": "vrprogram",
@@ -232,7 +242,7 @@
     "Explanatory": "地球儀の３DモデルをAR、VRでプレビューします。この３DモデルはAR上でマーカーレスで表示することができます。"
   },
   {
-    "number": 20,
+    "number": 3,
     "name": "壁を壊せ！VRゲーム",
     "path": "./resouce/wall_break.png",
     "class": "vrprogram",
@@ -243,7 +253,7 @@
     "Explanatory": "物理エンジンを使ったVRゲームです。無数に散らばった球体を飛ばして、壁を壊しましょう。"
   },
   {
-    "number": 21,
+    "number": 24,
     "name": "ジェンガ",
     "path": "./resouce/jenga.png",
     "class": "vrprogram",
@@ -254,7 +264,7 @@
     "Explanatory": "VR上でプレイするジェンガゲームです。"
   },
   {
-    "number": 22,
+    "number": 25,
     "name": "VR4択クイズ",
     "path": "./resouce/four_choice_quiz.png",
     "class": "vrprogram",
@@ -265,7 +275,7 @@
     "Explanatory": "VRの4択クイズです。4つのブロック中に1つだけある正解を見つけて３Dモデルを探し出しましょう。"
   },
   {
-    "number": 22,
+    "number": 26,
     "name": "ワープボタン",
     "path": "./resouce/warp_button.png",
     "class": "vrprogram",
@@ -276,7 +286,7 @@
     "Explanatory": "360°全天球画像の風景を旅行できるVRです。ボタンを押すことで、風景をワープすることができます。"
   },
   {
-    "number": 23,
+    "number": 27,
     "name": "カラフル",
     "path": "./resouce/colorful.png",
     "class": "vrprogram",
@@ -287,7 +297,7 @@
     "Explanatory": "カラフルな直方体が無数に配置されたVRです。ループとランダムプログラムのサンプルになります。"
   },
   {
-    "number": 24,
+    "number": 28,
     "name": "ボックス",
     "path": "./resouce/box_fly.png",
     "class": "vrprogram",
@@ -298,7 +308,7 @@
     "Explanatory": "ボックスの配置されたVRです。ボックスは物理エンジンが付与されており、クリックでぶっ飛ばすことができます。"
   },
   {
-    "number": 25,
+    "number": 29,
     "name": "AR宝探し",
     "path": "./resouce/AR_treasure.jpg",
     "class": "vrprogram",
@@ -307,16 +317,5 @@
     "producer": "Dai Yamamoto",
     "publishing": "public",
     "Explanatory": "スマホGPSを使った位置情報ARの宝探しです。宝箱の場所や数は任意に設定できます。"
-  },
-  {
-    "number": 26,
-    "name": "VR音声認識",
-    "path": "./resouce/VR-Voice-Text.png",
-    "class": "vrprogram",
-    "url": "https://demo.blockvrock.com/VR-Voice-Text/",
-    "day": "2022/12/19",
-    "producer": "FUMITAKA MURAKAMI",
-    "publishing": "public",
-    "Explanatory": "VR上で音声人気を行い、認識した内容を３Dオブジェクトで表示します。"
   }
 ]
